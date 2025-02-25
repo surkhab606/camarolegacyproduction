@@ -5,7 +5,7 @@ const camaroData = [
             "igniting one of the greatest rivalries in automotive history. The first-generation " +
             "Camaro was available as a coupe or convertible and offered a range of six-cylinder " +
             "and V8 engines.",
-        image: "",
+        image: "67camaro.jpeg",
         trims: "Sport Coupe, RS, SS, Z/28",
         horsepower: "Z/28: 375HP",
         zeroToSixty: "Z/28: 6.9s",

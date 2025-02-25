@@ -6,11 +6,21 @@ function CamaroPage() {
         const { year } = useParams();
         const intYear = Number(year);
         const camaro = CamaroData.find((camaro) => camaro.year === intYear);
-        return (
-            <div>
-                {camaro ? <div className="camaroimage">{camaro.image}</div> : <p>Camaro Not Found</p>}
-            </div>
-        )
+        console.log("Image Path:", `/assets/${camaro.image}`);
+
+
+    return (
+                <div>
+                    {camaro ? (
+                        <div className="camaroimage">
+                            <img src={`/assets/${camaro.image}`} alt={`Camaro ${camaro.year}`} className="camaro-image" />
+                        </div>
+                    ) : (
+                        <p>Camaro Not Found</p>
+                    )}
+                </div>
+        );
+
 }
 
 export default CamaroPage

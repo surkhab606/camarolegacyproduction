@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react'
 import './App.css'
-import logo from './assets/camarologo.png';
+import logo from '../public/assets/camarologo.png';
 import './data/CamaroData.js'
 import CamaroData from "./data/CamaroData.js";
 import {Link} from "react-router-dom";
