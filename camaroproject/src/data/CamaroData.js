@@ -117,7 +117,7 @@ const camaroData = [
         year: 1976,
         description: "With minor styling changes, including a revised grille and new interior options, " +
             "the 1976 Camaro maintained its appeal. ",
-        image: "",
+        image: "76camaro.jpeg", //https://www.americanmusclecarz.com/vehicles/12798/1976-chevrolet-camaro-lt
         trims: "Sport Coupe, RS, Type LT",
         horsepower: "Type LT: 165HP",
         zeroToSixty: "Type LT: 10.5s",
@@ -129,7 +129,7 @@ const camaroData = [
         description: "This year saw the Camaro surpass the Mustang in sales for the first time. " +
             "The Z/28 returned as a full-fledged model, featuring bold graphics and a 350 cubic-" +
             "inch V8. It emphasized handling and aggressive styling.",
-        image: "",
+        image: "bumblebee.webp",
         trims: "Sport Coupe, RS, Type LT, Z28",
         horsepower: "Z28: 185HP",
         zeroToSixty: "Z28: around 8.5s",
@@ -141,7 +141,7 @@ const camaroData = [
         description: "A major refresh brought a new front and rear design, with a body-colored " +
             "urethane bumper and wraparound taillights. The Z/28 received aerodynamic " +
             "enhancements and a new hood scoop. ",
-        image: "",
+        image: "78camaro.jpeg", //https://www.fastlanecars.com/vehicles/125/1978-chevrolet-camaro
         trims: "Sport Coupe, Rally Sport, Type LT, Z28",
         horsepower: "Z28: 185HP",
         zeroToSixty: "Z28: around 8.5s",
@@ -154,7 +154,7 @@ const camaroData = [
             "Styling tweaks included a revised interior and updated graphics for the Z/28. Power levels " +
             "remained modest, but the Camaro’s aggressive looks and solid handling kept it popular " +
             "among performance enthusiasts.",
-        image: "",
+        image: "79camaro.webp", //https://relicate.com/blogs/automotive-interior-inspiration-gallery/roadster-shop-1979-camaro
         trims: "Sport Coupe, Rally Sport, Berlinetta, Z28",
         horsepower: "Z28: 175HP",
         zeroToSixty: "Z28: around 9.5s",
@@ -165,7 +165,7 @@ const camaroData = [
         year: 1980,
         description: "With new fuel economy concerns, Chevrolet introduced a 3.8L V6 as the base" +
             " engine, while the Z/28 gained functional hood scoops and improved aerodynamics. ",
-        image: "",
+        image: "80camaro.jpg", //MINE
         trims: "Sport Coupe, Rally Sport, Berlinetta, Z28",
         horsepower: "Z28: 190HP",
         zeroToSixty: "Z28: around 8.5s",
@@ -178,7 +178,7 @@ const camaroData = [
             " including a new computer-controlled carburetor for better emissions compliance." +
             " While performance was far from the muscle car glory days, the Camaro’s aggressive " +
             " styling and loyal following ensured its continued success.",
-        image: "",
+        image: "81camaro.webp", //https://bringatrailer.com/listing/1981-chevrolet-camaro-47/
         trims: "Sport Coupe, Berlinetta, Z28",
         horsepower: "Z28: 190HP",
         zeroToSixty: "Z28: around 8.5s",
