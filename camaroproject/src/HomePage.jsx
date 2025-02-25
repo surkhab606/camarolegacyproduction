@@ -7,7 +7,6 @@ import CamaroData from "./data/CamaroData.js";
 import {Link} from "react-router-dom";
 
 function HomePage() {
-  const [count, setCount] = useState(0)
 
   return (
       <div>
@@ -15,6 +14,7 @@ function HomePage() {
           <p>Random writing that shows me what the p tags do.</p>
 
           <div className="camaroboxparent">
+            {CamaroData.filter(camaro => camaro.year !== 1000)}
 
             {/* Dynamic div generation. */}
             {CamaroData.map((camaro) => (
