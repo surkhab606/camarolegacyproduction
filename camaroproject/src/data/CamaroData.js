@@ -29,7 +29,7 @@ const camaroData = [
         description: "A landmark year for the Camaro, 1969 introduced a more aggressive, " +
             "chiseled design with revised body lines and an unmistakable presence. The Z/28 " +
             "remained a favorite among enthusiasts.",
-        image: "",
+        image: "69camaro.jpg", //https://www.sportscarmarket.com/profile/1969-chevrolet-camaro-z-28
         trims: "Sport Coupe, RS, SS, Z/28",
         horsepower: "Z/28: 375HP",
         zeroToSixty: "Z/28: 6.9s",
@@ -41,7 +41,7 @@ const camaroData = [
         description: "Marking the dawn of the second generation, the 1970 Camaro featured a " +
             "European-inspired design with a longer hood, a fastback profile, and an all-new " +
             "interior. ",
-        image: "",
+        image: "70camaro.jpg", //https://classiccarsltd.com/vehicles/1970-chevrolet-camaro-z28-rs/
         trims: "Sport Coupe, RS, SS, Z/28",
         horsepower: "Z/28: 360HP",
         zeroToSixty: "Z/28: 6.7s",
@@ -53,7 +53,7 @@ const camaroData = [
         description: "Though visually similar to the 1970 model, the 1971 Camaro faced new emissions and " +
             "safety regulations. Engine compression ratios were lowered, slightly reducing power " +
             "outputs, but the big-block and small-block engines still offered impressive performance. ",
-        image: "",
+        image: "71camaro.jpeg", //https://www.gaaclassiccars.com/vehicles/35236/1971-chevrolet-camaro
         trims: "Sport Coupe, RS, SS, Z/28",
         horsepower: "Z/28: 330HP",
         zeroToSixty: "Z/28: 6.9s",
@@ -66,7 +66,7 @@ const camaroData = [
             "This was also the final year for the high-performance SS 396 package. " +
             "Stricter emissions and insurance premiums made high-performance muscle cars " +
             "less accessible, signaling an era of change for American performance cars.",
-        image: "",
+        image: "72camaro.JPG", //https://www.ebay.ca/itm/402338827079
         trims: "Sport Coupe, RS, SS, Z28",
         horsepower: "Z28: 255HP",
         zeroToSixty: "Z28: 7.2s",
@@ -80,7 +80,7 @@ const camaroData = [
             "performer, featuring the 350 cubic-inch LT-1 V8, while the RS package added unique " +
             "split bumpers that gave the Camaro a distinctive look. Despite industry changes, " +
             "the Camaro remained a favorite among enthusiasts.",
-        image: "",
+        image: "73camaro.jpeg", //https://www.classicautomall.com/vehicles/6165/1973-chevrolet-camaro-z28-tribute
         trims: "Sport Coupe, RS, Type LT, Z28",
         horsepower: "Z28: 245HP",
         zeroToSixty: "Z28: 7.2s",
@@ -94,7 +94,7 @@ const camaroData = [
             "The rear taillights were also redesigned to wrap around the fenders. " +
             "While performance continued to decline due to emissions controls, " +
             "the Camaro still offered a powerful V8 sports car.",
-        image: "",
+        image: "74camaro.jpg", //https://www.hotrod.com/features/unrestored-original-1974-chevrolet-camaro-z28-proof-performance-didnt-die-early-1970s/
         trims: "Sport Coupe, Type LT, Z28",
         horsepower: "Z28: 245HP",
         zeroToSixty: "Z28: 7.2s",
@@ -106,7 +106,7 @@ const camaroData = [
         description: "The 1975 Camaro marked the introduction of catalytic converters and other " +
             "emissions-related changes, further impacting performance. Chevrolet discontinued " +
             "the Z/28 model this year, leaving the LT trim as the performance leader. ",
-        image: "",
+        image: "75camaro.jpg", //https://www.hotrod.com/features/1975-chevy-camaro-lsa-swapped/
         trims: "Sport Coupe, RS, Type LT",
         horsepower: "Type LT: 155HP",
         zeroToSixty: "Type LT: 11.0s",
