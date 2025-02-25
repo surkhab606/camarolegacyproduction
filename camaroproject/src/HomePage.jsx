@@ -4,6 +4,7 @@ import './App.css'
 import logo from './assets/camarologo.png';
 import './data/CamaroData.js'
 import CamaroData from "./data/CamaroData.js";
+import {Link} from "react-router-dom";
 
 function HomePage() {
   const [count, setCount] = useState(0)
@@ -12,9 +13,12 @@ function HomePage() {
       <div>
           <img src={logo} />
           <p>Random writing that shows me what the p tags do.</p>
+
           <div className="camaroboxparent">
+
+            {/* Dynamic div generation. */}
             {CamaroData.map((camaro) => (
-              <div className="camarobox">{camaro.year}</div>
+              <Link to={`/camaro/${camaro.year}`}><div className="camarobox">{camaro.year}</div></Link>
           ))}
 
           </div>
