@@ -14,10 +14,9 @@ function HomePage() {
           <p>Random writing that shows me what the p tags do.</p>
 
           <div className="camaroboxparent">
-            {CamaroData.filter(camaro => camaro.year !== 1000)}
 
             {/* Dynamic div generation. */}
-            {CamaroData.map((camaro) => (
+            {CamaroData.filter(camaro => camaro.year !== 1000).map((camaro) => (
               <Link to={`/camaro/${camaro.year}`}><div className="camarobox">{camaro.year}</div></Link>
           ))}
 
