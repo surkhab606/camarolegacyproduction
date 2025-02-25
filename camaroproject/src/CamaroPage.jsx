@@ -11,13 +11,7 @@ function CamaroPage() {
 
     return (
                 <div>
-                    {camaro ? (
-                        <div className="camaroimage">
-                            <img src={`/assets/${camaro.image}`} alt={`Camaro ${camaro.year}`} className="camaro-image" />
-                        </div>
-                    ) : (
-                        <p>Camaro Not Found</p>
-                    )}
+                    <div className ="camaro-background" style={{ backgroundImage: `url(/assets/${camaro.image})`}}></div>
                 </div>
         );
 

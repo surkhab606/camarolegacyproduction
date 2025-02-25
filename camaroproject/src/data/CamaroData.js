@@ -17,7 +17,7 @@ const camaroData = [
         description: "The 1968 Camaro refined the original formula with a cleaner look, " +
             "eliminating side vent windows for a sleeker design. Safety improvements " +
             "included front shoulder belts and side marker lights.",
-        image: "",
+        image: "68camaro.jpg", //https://journal.classiccars.com/2023/10/01/autohunter-spotlight-1968-chevrolet-camaro-coupe/
         trims: "Sport Coupe, RS, SS, Z/28",
         horsepower: "Z/28: 375HP",
         zeroToSixty: "Z/28: 6.9s",
