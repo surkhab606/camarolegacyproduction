@@ -54,4 +54,13 @@ img {
   background-repeat: no-repeat;
 }
 
+.camaro-overlay {
+  max-width: 100%;
+  height: 30vh;
+  position: absolute;
+  background-color: red;
+  z-index: 10;
+
+
+}
 
