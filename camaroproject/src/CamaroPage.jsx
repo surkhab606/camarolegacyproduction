@@ -7,7 +7,7 @@ function CamaroPage() {
         const intYear = Number(year);
         const camaro = CamaroData.find((camaro) => camaro.year === intYear);
         console.log("Image Path:", `/assets/${camaro.image}`);
-
+        const windowScroll = (window.scrollY / (document.body.scrollHeight - window.innerHeight));
 
     return (
                 <div>
