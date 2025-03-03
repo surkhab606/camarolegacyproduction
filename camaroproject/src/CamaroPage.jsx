@@ -12,10 +12,12 @@ function CamaroPage() {
                     <div className ="camaro-background" style={{ backgroundImage: `url(/assets/${camaro.image})`}}></div>
 
                     {/*Page Info Overlay*/}
-                    <div className ="camaro-overlay"></div>
+                    <div className ="camaro-overlay">
+                        {/*Year Popup*/}
+                        <p>{camaro.year}</p>
+                    </div>
 
-                    {/*Year Popup*/}
-                    <div className ="camaro-year"></div>
+
 
                 </div>
         );

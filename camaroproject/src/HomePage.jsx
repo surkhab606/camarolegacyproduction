@@ -11,7 +11,6 @@ function HomePage() {
   return (
       <div>
           <img src={logo} />
-          <p>Random writing that shows me what the p tags do.</p>
 
           <div className="camaroboxparent">
 
