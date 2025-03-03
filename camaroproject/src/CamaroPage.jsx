@@ -11,7 +11,7 @@ function CamaroPage() {
         useEffect(() => {
             setTimeout(() => {
                 setYearOpacity(true);
-            }, 1000);
+            }, 5);
         }, []);
 
         return (
@@ -23,7 +23,7 @@ function CamaroPage() {
                     <div className ="camaro-overlay"></div>
 
                     {/*Year Popup*/}
-                    <p className="camaro-year">{camaro.year}</p>
+                    <p className="camaro-year" style={{opacity: yearOpacity ? 1 : 0}}>{camaro.year}</p>
 
 
 
