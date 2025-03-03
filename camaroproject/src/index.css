@@ -65,4 +65,5 @@ img {
   bottom: 40vh;
   position: absolute;
   font-size: 15vh;
+  text-shadow: 10px 2px 7px rgba(0, 0, 0, 0.7);
 }
