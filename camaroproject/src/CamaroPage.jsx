@@ -14,6 +14,9 @@ function CamaroPage() {
                     {/*Page Info Overlay*/}
                     <div className ="camaro-overlay"></div>
 
+                    {/*Year Popup*/}
+                    <div className ="camaro-year"></div>
+
                 </div>
         );
 
