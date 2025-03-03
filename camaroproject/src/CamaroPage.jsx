@@ -20,10 +20,15 @@ function CamaroPage() {
                     <div className ="camaro-background" style={{ backgroundImage: `url(/assets/${camaro.image})`}}></div>
 
                     {/*Page Info Overlay*/}
-                    <div className ="camaro-overlay" style={{opacity: objOpacity ? 1: 0}}></div>
+                    <div className ="camaro-overlay" style={{opacity: objOpacity ? 1: 0}}>
+                        {/*Description Popup*/}
+                        <p className="camaro-desc" style={{opacity: objOpacity ? 1 : 0}}>{camaro.description}</p>
+                    </div>
 
                     {/*Year Popup*/}
                     <p className="camaro-year" style={{opacity: objOpacity ? 1 : 0}}>{camaro.year}</p>
+
+
 
 
 

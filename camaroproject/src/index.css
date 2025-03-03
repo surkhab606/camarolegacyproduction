@@ -60,6 +60,9 @@ img {
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
   transition: opacity 1.5s ease-in;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .camaro-year {
@@ -73,4 +76,16 @@ img {
   -webkit-text-stroke: 3px black;
   opacity: 0;
   transition: opacity 1.5s ease-in;
+}
+
+.camaro-desc {
+  color: white;
+  max-width: 45%;
+  bottom: 9vh;
+  font-size: 3vh;
+  padding-top: 15px;
+  padding-left: 15px;
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+  font-family: Futura, sans-serif;
 }
