@@ -1,4 +1,3 @@
-import React, {useEffect, useState} from 'react';
 import CamaroData from './data/CamaroData.js'
 import {useParams} from "react-router-dom";
 
@@ -12,6 +11,8 @@ function CamaroPage() {
                     {/*Dynamic Camaro Image*/}
                     <div className ="camaro-background" style={{ backgroundImage: `url(/assets/${camaro.image})`}}></div>
 
+                    {/*Page Info Overlay*/}
+                    <div className ="camaro-overlay"></div>
 
                 </div>
         );
