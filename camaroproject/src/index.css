@@ -70,5 +70,5 @@ img {
   padding-left: 5px;
   -webkit-text-stroke: 3px black;
   opacity: 0;
-  transition: opacity 3s ease-in;
+  transition: opacity 1.5s ease-in;
 }

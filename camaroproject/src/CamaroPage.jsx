@@ -6,7 +6,7 @@ function CamaroPage() {
         const { year } = useParams();
         const intYear = Number(year);
         const camaro = CamaroData.find((camaro) => camaro.year === intYear);
-        const [yearOpacity, setYearOpacity] = useState(false);
+        const [objOpacity, setObjectOpacity] = useState(false);
 
         useEffect(() => {
             setTimeout(() => {
