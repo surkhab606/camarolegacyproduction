@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: red;
+  background-color: white;
   margin: 0;
   padding: 0;
 }
@@ -58,6 +58,8 @@ img {
   height: 30vh;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
 }
 
 .camaro-year {
