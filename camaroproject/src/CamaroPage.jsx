@@ -17,7 +17,7 @@ function CamaroPage() {
         return (
                 <div>
                     {/*Dynamic Camaro Image*/}
-                    <div className ="camaro-background" style={{ backgroundImage: `url(/assets/${camaro.image})`}}></div>
+                    <div className ="camaro-background" style={{ backgroundImage: `url(${camaro.image})`}}></div>
 
                     {/*Page Info Overlay*/}
                     <div className ="camaro-overlay" style={{opacity: objOpacity ? 1: 0}}>

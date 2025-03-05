@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react'
 import './App.css'
 import logo from '../public/assets/camarologo.png';
 import './data/CamaroData.js'
@@ -44,7 +43,7 @@ function HomePage() {
 
             {/* Dynamic div generation. */}
             {CamaroData.filter(camaro => camaro.year !== 1000).map((camaro) => (
-              <Link to={`/camaro/${camaro.year}`}><div className="camarobox">
+              <Link to={`/camaro/${camaro.year}`}><div className="camarobox" style={{ backgroundImage: `url(${camaro.image})`, backgroundSize: "cover", backgroundPosition: "center" }}>
                   <div className={`camaroboxtext-${camaroGen(camaro.year)}`}>{camaro.year}</div>
               </div></Link>
           ))}
