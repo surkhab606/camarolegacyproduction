@@ -46,14 +46,47 @@ img {
 
 }
 
-.camarobox-text {
+.camaroboxtext-gen1 {
   font-family: Garamond, sans-serif;
   font-size: 100px;
   line-height: 100px;
   text-align: left;
 }
 
+.camaroboxtext-gen2 {
+  font-family: Garamond, sans-serif;
+  font-size: 100px;
+  line-height: 100px;
+  text-align: left;
+}
 
+.camaroboxtext-gen3 {
+  font-family: Garamond, sans-serif;
+  font-size: 100px;
+  line-height: 100px;
+  text-align: left;
+}
+
+.camaroboxtext-gen4 {
+  font-family: Garamond, sans-serif;
+  font-size: 100px;
+  line-height: 100px;
+  text-align: left;
+}
+
+.camaroboxtext-gen5 {
+  font-family: Garamond, sans-serif;
+  font-size: 100px;
+  line-height: 100px;
+  text-align: left;
+}
+
+.camaroboxtext-gen6 {
+  font-family: Garamond, sans-serif;
+  font-size: 100px;
+  line-height: 100px;
+  text-align: left;
+}
 
 .camaro-background {
   width: 100vw;

@@ -8,27 +8,27 @@ import {Link} from "react-router-dom";
 
 //Helper function to retrieve Camaro generations
 function camaroGen(year) {
-    if (1967 <= year <= 1969) {
+    if (year >= 1967 && year <= 1969) {
         return "gen1"
     }
 
-    if (1970 <= year <= 1981) {
+    if (year >= 1970 && year <= 1981) {
         return "gen2"
     }
 
-    if (1982 <= year <= 1992) {
+    if (year >= 1982 && year <= 1992) {
         return "gen3"
     }
 
-    if (1993 <= year <= 2002) {
+    if (year >= 1993 && year <= 2002) {
         return "gen4"
     }
 
-    if (2010 <= year <= 2015) {
+    if (year >= 2010 && year <= 2015) {
         return "gen5"
     }
 
-    if (2016 <= year <= 2025) {
+    if (year >= 2016 && year <= 2025) {
         return "gen6"
     }
 
@@ -45,7 +45,7 @@ function HomePage() {
             {/* Dynamic div generation. */}
             {CamaroData.filter(camaro => camaro.year !== 1000).map((camaro) => (
               <Link to={`/camaro/${camaro.year}`}><div className="camarobox">
-                  <div className="camarobox-text">{camaro.year}</div>
+                  <div className={`camaroboxtext-${camaroGen(camaro.year)}`}>{camaro.year}</div>
               </div></Link>
           ))}
 
