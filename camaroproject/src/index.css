@@ -26,6 +26,7 @@ img {
   padding: 0 10px;
   gap: 1px;
   margin-top: 55px;
+  height: 100px;
 }
 
 .camaroboxparent a {
@@ -38,15 +39,21 @@ img {
   background-color: black;
   height: 400px;
   color: white;
-  font-size: 100px;
   margin: 10px;
-  padding-top: 5px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
 
 }
 
 .camarobox-text {
-
+  font-family: Garamond, sans-serif;
+  font-size: 100px;
+  line-height: 100px;
+  text-align: left;
 }
+
+
 
 .camaro-background {
   width: 100vw;

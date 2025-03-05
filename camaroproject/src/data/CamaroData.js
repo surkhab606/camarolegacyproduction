@@ -1,3 +1,4 @@
+
 const camaroData = [
     {
         year: 1967,

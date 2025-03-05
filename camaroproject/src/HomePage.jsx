@@ -6,6 +6,34 @@ import './data/CamaroData.js'
 import CamaroData from "./data/CamaroData.js";
 import {Link} from "react-router-dom";
 
+//Helper function to retrieve Camaro generations
+function camaroGen(year) {
+    if (1967 <= year <= 1969) {
+        return "gen1"
+    }
+
+    if (1970 <= year <= 1981) {
+        return "gen2"
+    }
+
+    if (1982 <= year <= 1992) {
+        return "gen3"
+    }
+
+    if (1993 <= year <= 2002) {
+        return "gen4"
+    }
+
+    if (2010 <= year <= 2015) {
+        return "gen5"
+    }
+
+    if (2016 <= year <= 2025) {
+        return "gen6"
+    }
+
+}
+
 function HomePage() {
 
   return (
@@ -20,6 +48,8 @@ function HomePage() {
                   <div className="camarobox-text">{camaro.year}</div>
               </div></Link>
           ))}
+
+
 
           </div>
 
