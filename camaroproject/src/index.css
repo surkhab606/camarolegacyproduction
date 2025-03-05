@@ -44,6 +44,10 @@ img {
 
 }
 
+.camarobox-text {
+
+}
+
 .camaro-background {
   width: 100vw;
   height: 100vh;
@@ -155,5 +159,9 @@ img {
   font-size: 2.4vh;
   color: white;
   font-family: Futura, sans-serif;
+  display: inline;
+}
 
+.camaro-forum a:hover {
+  color: darkblue;
 }

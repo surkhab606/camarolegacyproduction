@@ -230,7 +230,7 @@ const camaroData = [
             "wheels, and a Tuned Port Injection (TPI) 5.0L V8, solidifying the Camaro’s return to " +
             "serious performance.",
         image: "85camaro.jpg", //https://www.motortrend.com/vehicle-genres/1985-chevy-camaro-irocz-info-pictures/
-        trims: "Sport Coupe, Berlinetta, Z28, IROC-Z (Z28 package)",
+        trims: "Sport Coupe, Berlinetta, Z28, IROC-Z",
         horsepower: "IROC-Z: 215HP",
         zeroToSixty: "IROC-Z: around 7.0s",
         MSRP: "IROC-Z: around $11,600",
