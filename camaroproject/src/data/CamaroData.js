@@ -78,8 +78,7 @@ const camaroData = [
         description: "Chevrolet adapted to new federal regulations by adding large rubber bumper guards " +
             "and reinforced structures for improved crash protection. The Z/28 remained a strong " +
             "performer, featuring the 350 cubic-inch LT-1 V8, while the RS package added unique " +
-            "split bumpers that gave the Camaro a distinctive look. Despite industry changes, " +
-            "the Camaro remained a favorite among enthusiasts.",
+            "split bumpers that gave the Camaro a distinctive look.",
         image: "73camaro.jpeg", //https://www.classicautomall.com/vehicles/6165/1973-chevrolet-camaro-z28-tribute
         trims: "Sport Coupe, RS, Type LT, Z28",
         horsepower: "Z28: 245HP",
@@ -92,8 +91,7 @@ const camaroData = [
         description: "A new, larger impact-absorbing front bumper dramatically " +
             "altered the Camaro’s appearance in 1974 to comply with federal regulations. " +
             "The rear taillights were also redesigned to wrap around the fenders. " +
-            "While performance continued to decline due to emissions controls, " +
-            "the Camaro still offered a powerful V8 sports car.",
+            "Performance continued to decline due to emissions.",
         image: "74camaro.jpg", //https://www.hotrod.com/features/unrestored-original-1974-chevrolet-camaro-z28-proof-performance-didnt-die-early-1970s/
         trims: "Sport Coupe, Type LT, Z28",
         horsepower: "Z28: 245HP",
@@ -128,7 +126,7 @@ const camaroData = [
         year: 1977,
         description: "This year saw the Camaro surpass the Mustang in sales for the first time. " +
             "The Z/28 returned as a full-fledged model, featuring bold graphics and a 350 cubic-" +
-            "inch V8. It emphasized handling and aggressive styling.",
+            "inch V8. '77 emphasized handling and aggressive styling.",
         image: "bumblebee.webp",
         trims: "Sport Coupe, RS, Type LT, Z28",
         horsepower: "Z28: 185HP",
@@ -139,7 +137,7 @@ const camaroData = [
     {
         year: 1978,
         description: "A major refresh brought a new front and rear design, with a body-colored " +
-            "urethane bumper and wraparound taillights. The Z/28 received aerodynamic " +
+            "urethane bumper and brand new taillights. The Z/28 received aerodynamic " +
             "enhancements and a new hood scoop. ",
         image: "78camaro.jpeg", //https://www.fastlanecars.com/vehicles/125/1978-chevrolet-camaro
         trims: "Sport Coupe, Rally Sport, Type LT, Z28",
@@ -190,7 +188,7 @@ const camaroData = [
         description: "The introduction of the third-generation Camaro in 1982 marked a radical departure " +
             "from its predecessors. Featuring a sleek, aerodynamic design with a hatchback rear, " +
             "the new Camaro was lighter and more efficient. Fuel injection was introduced, " +
-            "and the Z/28 featured a unique ground effects package. The Berlinetta trim catered to " +
+            "and the Berlinetta trim catered to " +
             "luxury-oriented buyers with an advanced digital dashboard.",
         image: "82camaro.jpg", //https://www.autoevolution.com/cars/chevrolet-camaro-1982.html#aeng_chevrolet-camaro-1982-25-3at-90-hp
         trims: "Sport Coupe, Berlinetta, Z28",
@@ -322,7 +320,7 @@ const camaroData = [
     {
         year: 1993,
         description: "The fourth-generation Camaro debuted with a completely modernized design, featuring a rounded, aerodynamic body " +
-            "and a composite front end. Under the hood, the LT1 5.7L V8—borrowed from the Corvette—delivered impressive power. ",
+            "and a composite front end. Under the hood, the LT1 5.7L V8—borrowed from the Corvette delivered impressive power. ",
         image: "93camaro.png", //https://www.motortrend.com/features/camp-0912-1993-chevy-camaro-z28/
         trims: "Coupe, Z/28",
         horsepower: "Z/28: 275HP",
@@ -356,7 +354,7 @@ const camaroData = [
     {
         year: 1996,
         description: "A new 3.8L V6 replaced the older 3.4L, offering improved power and efficiency." +
-            " The Z28 gained a one-year-only aftermarket SS package, featuring a functional hood scoop and a 305-horsepower LT1 V8, " +
+            " The Z28 gained an aftermarket SS package, featuring a functional hood scoop and a 305-horsepower LT1 V8, " +
             "making it the most powerful Camaro in years.",
         image: "96camaro.webp", //https://bringatrailer.com/listing/1996-chevrolet-camaro-z28/
         trims: "Coupe, RS, Z28, SS (Z28 package)",
@@ -460,7 +458,7 @@ const camaroData = [
     },
     {
         year: 2012,
-        description: "Celebrating 45 years of Camaro, this model introduced a 323-hp V6, while the " +
+        description: "Celebrating 45 years of Camaro, this year introduced a 323-hp V6, while the " +
             "ZL1 debuted with a 580-hp supercharged V8, adaptive suspension, and track-ready " +
             "aerodynamics.",
         image: "12camaro.jpg",
@@ -595,9 +593,9 @@ const camaroData = [
     },
     {
         year: 2025,
-        description: "What's next? We wonder. An electric future has been teased by some, whereas others " +
-            "are convinced of a Camaro SUV. No matter the future, it's clear that the Camaro will be a household" +
-            "legend for generations to come.",
+        description: "What's next? An electric future has been teased by some, whereas others " +
+            "are convinced of an SUV adaptation. No matter the future, it's clear that the Camaro will be a household" +
+            " legend for generations to come.",
         image: "",
         trims: "???",
         horsepower: "???",

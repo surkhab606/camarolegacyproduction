@@ -85,7 +85,21 @@ img {
   font-size: 3vh;
   padding-top: 15px;
   padding-left: 15px;
+  display: inline;
   opacity: 0;
   transition: opacity 1.5s ease-in;
   font-family: Futura, sans-serif;
+}
+
+.camaro-trims {
+  color: white;
+  font-size: 3vh;
+  padding-left: 700px;
+  position: absolute;
+  display: inline;
+  top: 15px;
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+  font-family: Futura, sans-serif;
+
 }

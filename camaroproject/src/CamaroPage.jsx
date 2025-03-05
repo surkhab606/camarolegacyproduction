@@ -23,6 +23,8 @@ function CamaroPage() {
                     <div className ="camaro-overlay" style={{opacity: objOpacity ? 1: 0}}>
                         {/*Description Popup*/}
                         <p className="camaro-desc" style={{opacity: objOpacity ? 1 : 0}}>{camaro.description}</p>
+                        {/*Trims Popup*/}
+                        <p className="camaro-trims" style={{opacity: objOpacity ? 1 : 0}}>Trims: {camaro.trims}</p>
                     </div>
 
                     {/*Year Popup*/}
