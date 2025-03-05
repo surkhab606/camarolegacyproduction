@@ -138,3 +138,22 @@ img {
   transition: opacity 1.5s ease-in;
   font-family: Futura, sans-serif;
 }
+
+.camaro-forum {
+  color: white;
+  font-size: 3vh;
+  padding-left: 700px;
+  position: absolute;
+  display: inline;
+  top: 155px;
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+  font-family: Futura, sans-serif;
+}
+
+.camaro-forum a {
+  font-size: 2.4vh;
+  color: white;
+  font-family: Futura, sans-serif;
+
+}

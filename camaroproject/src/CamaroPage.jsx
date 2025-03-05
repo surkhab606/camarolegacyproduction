@@ -31,6 +31,8 @@ function CamaroPage() {
                         <p className="camaro-zero" style={{opacity: objOpacity ? 1 : 0}}>0-60 -  {camaro.zeroToSixty}</p>
                         {/*MSRP Popup*/}
                         <p className="camaro-msrp" style={{opacity: objOpacity ? 1 : 0}}>MSRP -  {camaro.MSRP}</p>
+                        {/*Forum Popup*/}
+                        <p className="camaro-forum" style={{opacity: objOpacity ? 1 : 0}}>More Info -  <a href={camaro.forumLink}>{camaro.forumLink}</a></p>
                     </div>
 
                     {/*Year Popup*/}
