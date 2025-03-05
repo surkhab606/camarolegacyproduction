@@ -26,7 +26,11 @@ function CamaroPage() {
                         {/*Trims Popup*/}
                         <p className="camaro-trims" style={{opacity: objOpacity ? 1 : 0}}>Trims: {camaro.trims}</p>
                         {/*Horsepower Popup*/}
-                        <p className="camaro-hp" style={{opacity: objOpacity ? 1 : 0}}>Horsepower: {camaro.horsepower}</p>
+                        <p className="camaro-hp" style={{opacity: objOpacity ? 1 : 0}}>Horsepower - {camaro.horsepower}</p>
+                        {/*0-60 Popup*/}
+                        <p className="camaro-zero" style={{opacity: objOpacity ? 1 : 0}}>0-60 -  {camaro.zeroToSixty}</p>
+                        {/*MSRP Popup*/}
+                        <p className="camaro-msrp" style={{opacity: objOpacity ? 1 : 0}}>MSRP -  {camaro.zeroToSixty}</p>
                     </div>
 
                     {/*Year Popup*/}

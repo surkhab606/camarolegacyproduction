@@ -114,3 +114,15 @@ img {
   transition: opacity 1.5s ease-in;
   font-family: Futura, sans-serif;
 }
+
+.camaro-zero {
+  color: white;
+  font-size: 3vh;
+  padding-left: 700px;
+  position: absolute;
+  display: inline;
+  top: 85px;
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+  font-family: Futura, sans-serif;
+}
