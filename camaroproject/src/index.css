@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-*{
-  font-family: monospace;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee&family=Michroma&family=Orbitron:wght@400..900&family=Russo+One&family=Syncopate:wght@400;700&display=swap');
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -58,43 +57,48 @@ img {
   font-size: 100px;
   line-height: 100px;
   text-align: left;
-  white-space: nowrap;
-  overflow: hidden;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
 .camaroboxtext-gen2 {
-  font-family:  sans-serif;
+  font-family: Russo One, sans-serif;
   font-size: 100px;
   line-height: 100px;
   text-align: left;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
 .camaroboxtext-gen3 {
-  font-family: Garamond, sans-serif;
+  font-family: Syncopate, sans-serif;
   font-size: 100px;
   line-height: 100px;
   text-align: left;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
 .camaroboxtext-gen4 {
-  font-family: Garamond, sans-serif;
-  font-size: 100px;
-  line-height: 100px;
+  font-family: Orbitron, sans-serif;
+  font-size: 80px;
+  line-height: 80px;
   text-align: left;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
 .camaroboxtext-gen5 {
-  font-family: Garamond, sans-serif;
+  font-family: Anton, sans-serif;
   font-size: 100px;
   line-height: 100px;
   text-align: left;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
 .camaroboxtext-gen6 {
-  font-family: Garamond, sans-serif;
+  font-family: Michroma, sans-serif;
   font-size: 100px;
   line-height: 100px;
   text-align: left;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+
 }
 
 .camaro-background {
