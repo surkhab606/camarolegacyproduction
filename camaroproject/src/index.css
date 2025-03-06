@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 *{
   font-family: monospace;
   margin: 0;
@@ -36,26 +36,34 @@ img {
 
 
 .camarobox {
-  border: solid black;
+
   background-color: black;
   height: 400px;
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 400px;
+  max-height: 400px;
   color: white;
   margin: 10px;
   padding: 10px 20px;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 
 }
 
 .camaroboxtext-gen1 {
-  font-family: Garamond, sans-serif;
+  font-family: Bungee, sans-serif;
   font-size: 100px;
   line-height: 100px;
   text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .camaroboxtext-gen2 {
-  font-family: "Comic Sans MS", sans-serif;
+  font-family:  sans-serif;
   font-size: 100px;
   line-height: 100px;
   text-align: left;
