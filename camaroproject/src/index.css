@@ -6,9 +6,13 @@
 }
 
 body {
-  background-color: white;
   margin: 0;
   padding: 0;
+  background-image: radial-gradient(#5a5a5a, black);
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 760vh;
+  background-color: black;
 }
 
 
@@ -51,6 +55,7 @@ img {
   overflow: hidden;
   border-radius: 10px;
   position: relative;
+  transition: 0.3s ease-in-out;
 
 }
 
@@ -234,7 +239,6 @@ img {
 
 .camarobox:hover {
   transform: translateY(-2vh);
-  transition: 0.3s ease-in-out;
 }
 
 .camarobox:hover .hover-light {
