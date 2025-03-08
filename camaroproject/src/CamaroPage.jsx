@@ -16,6 +16,7 @@ function CamaroPage() {
 
         return (
                 <div>
+
                     {/*Dynamic Camaro Image*/}
                     <div className ="camaro-background" style={{ backgroundImage: `url(${camaro.image})`}}></div>
 
@@ -32,7 +33,7 @@ function CamaroPage() {
                         {/*MSRP Popup*/}
                         <p className="camaro-msrp" style={{opacity: objOpacity ? 1 : 0}}>MSRP -  {camaro.MSRP}</p>
                         {/*Forum Popup*/}
-                        <p className="camaro-forum" style={{opacity: objOpacity ? 1 : 0}}>More Info -  <a href={camaro.forumLink}>{camaro.forumLink}</a></p>
+                        <p className="camaro-forum" style={{opacity: objOpacity ? 1 : 0}}>More Info -  <a href={camaro.forumLink} target="_blank" rel="noopener noreferrer">{camaro.forumLink}</a></p>
                     </div>
 
                     {/*Year Popup*/}

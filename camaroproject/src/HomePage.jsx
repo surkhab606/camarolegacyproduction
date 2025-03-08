@@ -44,6 +44,10 @@ function HomePage() {
             {/* Dynamic div generation. */}
             {CamaroData.filter(camaro => camaro.year !== 1000).map((camaro) => (
               <Link to={`/camaro/${camaro.year}`}><div className="camarobox" style={{ backgroundImage: `url(${camaro.divImage})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
+                  {/*Div Hover Light Effect*/}
+                  <div className ="hover-light"></div>
+                  {/*Gloss Effect*/}
+                  <div className ="glossy"></div>
                   <div className={`camaroboxtext-${camaroGen(camaro.year)}`}>{camaro.year}</div>
               </div></Link>
           ))}
