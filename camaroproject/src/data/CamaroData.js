@@ -703,25 +703,9 @@ const camaroData = [
         horsepower: "???",
         zeroToSixty: "???",
         MSRP: "???",
-        forumLink: "???",
+        forumLink: "",
         credit: "???"
     },
-
-    {
-        year: 1000,
-        description: "Invalid year!",
-        image: "",
-        trims: "???",
-        horsepower: "???",
-        zeroToSixty: "???",
-        MSRP: "???",
-        forumLink: "???",
-        credit: "???"
-    },
-
-
-
-
 ];
 
 export default camaroData;

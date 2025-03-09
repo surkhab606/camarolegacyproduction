@@ -263,5 +263,29 @@ body {
   transition: 0.7s ease-in-out;
 }
 
+.leftarrow {
+  position: absolute;
+  bottom: 85vh;
+  width: 75px;
+  fill: white;
+  left: 5px;
+  box-sizing: border-box;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+}
+
+.rightarrow {
+  position: absolute;
+  bottom: 85vh;
+  width: 75px;
+  fill: white;
+  right: 5px;
+  box-sizing: border-box;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+}
+
 
 
