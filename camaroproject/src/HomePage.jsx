@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.css'
-import logo from '../public/assets/camarologo.png';
+import logo from '../public/assets/camarolegacylogo.png';
+import smlogo from '../public/assets/smlogo.png';
 import './data/CamaroData.js'
 import CamaroData from "./data/CamaroData.js";
 import {Link} from "react-router-dom";
+
 
 //Helper function to retrieve Camaro generations
 function camaroGen(year) {
@@ -35,15 +37,28 @@ function camaroGen(year) {
 
 function HomePage() {
 
+    /*Goes back to saved scroll position if it exists*/
+    useEffect(() => {
+        const scrollPos = Number(sessionStorage.getItem("scrollPosition"));
+        if (scrollPos > 0) {
+            /*scrollTo needs TWO arguments (horizontal and vertical scroll)*/
+            window.scrollTo(0, scrollPos);
+        }
+
+    }, []);
+
+
   return (
       <div>
-          <img src={logo} />
+          <img src={logo}  style={{ width: "450px", height: "auto", display: "block", margin: "0 auto"}}/>
+          <a href={"https://www.surkhabmundi.com"}><img src={smlogo} style ={{width: "50px", position: "absolute", top: "10px", left: "25px"}}/></a>
 
           <div className="camaroboxparent">
 
             {/* Dynamic div generation. */}
             {CamaroData.filter(camaro => camaro.year !== 1000).map((camaro) => (
-              <Link to={`/camaro/${camaro.year}`}><div className="camarobox" style={{ backgroundImage: `url(${camaro.divImage})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
+              <Link onClick={() => sessionStorage.setItem("scrollPosition", window.scrollY)}
+                    to={`/camaro/${camaro.year}`}><div className="camarobox" style={{ backgroundImage: `url(${camaro.divImage})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
                   {/*Div Hover Light Effect*/}
                   <div className ="hover-light"></div>
                   {/*Gloss Effect*/}

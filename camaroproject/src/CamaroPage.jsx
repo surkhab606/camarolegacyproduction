@@ -34,6 +34,14 @@ function CamaroPage() {
                         <p className="camaro-msrp" style={{opacity: objOpacity ? 1 : 0}}>MSRP -  {camaro.MSRP}</p>
                         {/*Forum Popup*/}
                         <p className="camaro-forum" style={{opacity: objOpacity ? 1 : 0}}>More Info -  <a href={camaro.forumLink} target="_blank" rel="noopener noreferrer">{camaro.forumLink}</a></p>
+                        {/*Credit Popup*/}
+                        <p className="camaro-credit" style = {{opacity: objOpacity ? 1 : 0}}>
+                            Credit: {/^https?:\/\//.test(camaro.credit) ? (
+                                <a href={camaro.credit} target="_blank" rel="noopener noreferrer">{camaro.credit}</a>
+                            ) : (
+                                camaro.credit
+                            )}
+                        </p>
                     </div>
 
                     {/*Year Popup*/}

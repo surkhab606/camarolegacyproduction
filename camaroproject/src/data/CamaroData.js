@@ -6,65 +6,70 @@ const camaroData = [
             "igniting one of the greatest rivalries in automotive history. The first-generation " +
             "Camaro was available as a coupe or convertible and offered a range of six-cylinder " +
             "and V8 engines.",
-        image: "/assets/67camaro.png", //Credit: Steven Rupp, Hot Rod Magazine
+        image: "/assets/67camaro.png",
         divImage: "/assets/67camarodiv.jpg",
         trims: "Sport Coupe, RS, SS, Z/28",
         horsepower: "Z/28: 375HP",
         zeroToSixty: "Z/28: 6.9s",
         MSRP: "Z/28: around $3300",
         forumLink: "http://www.camaros.org/geninfo.shtml",
+        credit: "Steven Rupp, Hot Rod Magazine"
     },
     {
         year: 1968,
         description: "The 1968 Camaro refined the original formula with a cleaner look, " +
             "eliminating side vent windows for a sleeker design. Safety improvements " +
             "included front shoulder belts and side marker lights.",
-        image: "/assets/68camaro.jpg", //https://journal.classiccars.com/2023/10/01/autohunter-spotlight-1968-chevrolet-camaro-coupe/
+        image: "/assets/68camaro.jpg",
         divImage: "/assets/68camarodiv.jpg",
         trims: "Sport Coupe, RS, SS, Z/28",
         horsepower: "Z/28: 375HP",
         zeroToSixty: "Z/28: 6.9s",
         MSRP: "Z/28: around $3200",
         forumLink: "http://www.camaros.org/model.shtml",
+        credit: "https://journal.classiccars.com/2023/10/01/autohunter-spotlight-1968-chevrolet-camaro-coupe/"
     },
     {
         year: 1969,
         description: "A landmark year for the Camaro, 1969 introduced a more aggressive, " +
             "chiseled design with revised body lines and an unmistakable presence. The Z/28 " +
             "remained a favorite among enthusiasts.",
-        image: "/assets/69camaro.jpg", //https://www.sportscarmarket.com/profile/1969-chevrolet-camaro-z-28
+        image: "/assets/69camaro.jpg",
         divImage: "/assets/69camarodiv.jpg",
         trims: "Sport Coupe, RS, SS, Z/28",
         horsepower: "Z/28: 375HP",
         zeroToSixty: "Z/28: 6.9s",
         MSRP: "Z/28: around $3200",
         forumLink: "http://www.camaros.org/model.shtml",
+        credit: "https://www.sportscarmarket.com/profile/1969-chevrolet-camaro-z-28"
     },
     {
         year: 1970,
         description: "Marking the dawn of the second generation, the 1970 Camaro featured a " +
             "European-inspired design with a longer hood, a fastback profile, and an all-new " +
             "interior. ",
-        image: "/assets/70camaro.jpg", //https://classiccarsltd.com/vehicles/1970-chevrolet-camaro-z28-rs/
+        image: "/assets/70camaro.jpg",
         divImage: "/assets/70camarodiv.jpeg",
         trims: "Sport Coupe, RS, SS, Z/28",
         horsepower: "Z/28: 360HP",
         zeroToSixty: "Z/28: 6.7s",
         MSRP: "Z/28: around $3400",
         forumLink: "https://nastyz28.com/camaro/camaro70.html",
+        credit: "https://classiccarsltd.com/vehicles/1970-chevrolet-camaro-z28-rs/"
     },
     {
         year: 1971,
         description: "Though visually similar to the 1970 model, the 1971 Camaro faced new emissions and " +
             "safety regulations. Engine compression ratios were lowered, slightly reducing power " +
             "outputs, but the big-block and small-block engines still offered impressive performance. ",
-        image: "/assets/71camaro.jpeg", //https://www.gaaclassiccars.com/vehicles/35236/1971-chevrolet-camaro
+        image: "/assets/71camaro.jpeg",
         divImage: "/assets/71camarodiv.jpg",
         trims: "Sport Coupe, RS, SS, Z/28",
         horsepower: "Z/28: 330HP",
         zeroToSixty: "Z/28: 6.9s",
         MSRP: "Z/28: around $3600",
         forumLink: "https://nastyz28.com/camaro/camaro71.html",
+        credit: "https://www.gaaclassiccars.com/vehicles/35236/1971-chevrolet-camaro"
     },
     {
         year: 1972,
@@ -72,13 +77,14 @@ const camaroData = [
             "This was also the final year for the high-performance SS 396 package. " +
             "Stricter emissions and insurance premiums made high-performance muscle cars " +
             "less accessible, signaling an era of change for American performance cars.",
-        image: "/assets/72camaro.JPG", //https://www.ebay.ca/itm/402338827079
+        image: "/assets/72camaro.JPG",
         divImage: "/assets/72camarodiv.jpg",
         trims: "Sport Coupe, RS, SS, Z28",
         horsepower: "Z28: 255HP",
         zeroToSixty: "Z28: 7.2s",
         MSRP: "Z28: around $3600",
         forumLink: "https://nastyz28.com/camaro/camaro72.html",
+        credit: "Unknown"
     },
     {
         year: 1973,
@@ -86,13 +92,14 @@ const camaroData = [
             "and reinforced structures for improved crash protection. The Z/28 remained a strong " +
             "performer, featuring the 350 cubic-inch LT-1 V8, while the RS package added unique " +
             "split bumpers that gave the Camaro a distinctive look.",
-        image: "/assets/73camaro.jpeg", //https://www.classicautomall.com/vehicles/6165/1973-chevrolet-camaro-z28-tribute
+        image: "/assets/73camaro.jpeg",
         trims: "Sport Coupe, RS, Type LT, Z28",
         divImage: "/assets/73camarodiv.jpg",
         horsepower: "Z28: 245HP",
         zeroToSixty: "Z28: 7.2s",
         MSRP: "Z28: around $3500",
         forumLink: "https://nastyz28.com/camaro/camaro73.html",
+        credit: "https://www.classicautomall.com/vehicles/6165/1973-chevrolet-camaro-z28-tribute"
     },
     {
         year: 1974,
@@ -107,6 +114,7 @@ const camaroData = [
         zeroToSixty: "Z28: 7.2s",
         MSRP: "Z28: around $3600",
         forumLink: "https://nastyz28.com/camaro/camaro74.html",
+        credit: "https://www.hotrod.com/features/unrestored-original-1974-chevrolet-camaro-z28-proof-performance-didnt-die-early-1970s/,"
     },
     {
         year: 1975,
@@ -120,6 +128,7 @@ const camaroData = [
         zeroToSixty: "Type LT: 11.0s",
         MSRP: "Type LT: around $4070",
         forumLink: "https://nastyz28.com/camaro/camaro75.html",
+        credit: "https://www.hotrod.com/features/1975-chevy-camaro-lsa-swapped/"
     },
     {
         year: 1976,
@@ -132,6 +141,7 @@ const camaroData = [
         zeroToSixty: "Type LT: 10.5s",
         MSRP: "Type LT: around $4400",
         forumLink: "https://nastyz28.com/camaro/camaro76.html",
+        credit: "https://www.americanmusclecarz.com/vehicles/12798/1976-chevrolet-camaro-lt"
     },
     {
         year: 1977,
@@ -145,6 +155,7 @@ const camaroData = [
         zeroToSixty: "Z28: around 8.5s",
         MSRP: "Z28: around $5170",
         forumLink: "https://nastyz28.com/camaro/camaro77.html",
+        credit: "Unknown"
     },
     {
         year: 1978,
@@ -158,6 +169,7 @@ const camaroData = [
         zeroToSixty: "Z28: around 8.5s",
         MSRP: "Z28: around $5065",
         forumLink: "https://nastyz28.com/camaro/camaro78.html",
+        credit: "https://www.fastlanecars.com/vehicles/125/1978-chevrolet-camaro"
     },
     {
         year: 1979,
@@ -172,6 +184,7 @@ const camaroData = [
         zeroToSixty: "Z28: around 9.5s",
         MSRP: "Z28: around $6115",
         forumLink: "https://nastyz28.com/camaro/camaro79.html",
+        credit: "https://relicate.com/blogs/automotive-interior-inspiration-gallery/roadster-shop-1979-camaro"
     },
     {
         year: 1980,
@@ -184,6 +197,7 @@ const camaroData = [
         zeroToSixty: "Z28: around 8.5s",
         MSRP: "Z28: around $7120",
         forumLink: "https://nastyz28.com/camaro/camaro80.html",
+        credit: "It's Mine!"
     },
     {
         year: 1981,
@@ -198,14 +212,13 @@ const camaroData = [
         zeroToSixty: "Z28: around 8.5s",
         MSRP: "Z28: around $8000",
         forumLink: "https://nastyz28.com/camaro/camaro81.html",
+        credit: "https://bringatrailer.com/listing/1981-chevrolet-camaro-47/"
     },
     {
         year: 1982,
         description: "The introduction of the third-generation Camaro in 1982 marked a radical departure " +
             "from its predecessors. Featuring a sleek, aerodynamic design with a hatchback rear, " +
-            "the new Camaro was lighter and more efficient. Fuel injection was introduced, " +
-            "and the Berlinetta trim catered to " +
-            "luxury-oriented buyers with an advanced digital dashboard.",
+            "the new Camaro was lighter and more efficient.",
         image: "/assets/82camaro.jpg", //https://www.autoevolution.com/cars/chevrolet-camaro-1982.html#aeng_chevrolet-camaro-1982-25-3at-90-hp
         divImage: "/assets/82camarodiv.png",
         trims: "Sport Coupe, Berlinetta, Z28",
@@ -213,6 +226,7 @@ const camaroData = [
         zeroToSixty: "Z28: around 9.7s",
         MSRP: "$Z28: around $10,000",
         forumLink: "https://nastyz28.com/camaro/camaro82.html",
+        credit: "https://www.autoevolution.com/cars/chevrolet-camaro-1982.html#aeng_chevrolet-camaro-1982-25-3at-90-hp"
     },
     {
         year: 1983,
@@ -227,6 +241,7 @@ const camaroData = [
         zeroToSixty: "Z28: around 7.4s",
         MSRP: "Z28: around $10,000",
         forumLink: "https://nastyz28.com/camaro/camaro83.html",
+        credit: "https://www.conceptcarz.com/s10224/chevrolet-camaro.aspx"
     },
     {
         year: 1984,
@@ -241,6 +256,7 @@ const camaroData = [
         zeroToSixty: "Z28: around 7.4s",
         MSRP: "Z28: around $10,000",
         forumLink: "https://nastyz28.com/camaro/camaro84.html",
+        credit: "https://www.netcarshow.com/chevrolet/1984-camaro/"
     },
     {
         year: 1985,
@@ -255,6 +271,7 @@ const camaroData = [
         zeroToSixty: "IROC-Z: around 7.0s",
         MSRP: "IROC-Z: around $11,600",
         forumLink: "https://nastyz28.com/camaro/camaro85.html",
+        credit: "https://www.motortrend.com/vehicle-genres/1985-chevy-camaro-irocz-info-pictures/"
     },
     {
         year: 1986,
@@ -268,6 +285,7 @@ const camaroData = [
         zeroToSixty: "IROC-Z: around 7.0s",
         MSRP: "IROC-Z: around $12,300",
         forumLink: "https://nastyz28.com/camaro/camaro86.html",
+        credit: "https://www.motortrend.com/vehicle-genres/1985-chevy-camaro-irocz-info-pictures/"
     },
     {
         year: 1987,
@@ -281,6 +299,7 @@ const camaroData = [
         zeroToSixty: "IROC-Z: around 7.0s",
         MSRP: "IROC-Z: around $13,200",
         forumLink: "https://nastyz28.com/camaro/camaro87.html",
+        credit: "Unknown"
     },
     {
         year: 1988,
@@ -294,6 +313,7 @@ const camaroData = [
         zeroToSixty: "IROC-Z: around 6.9s",
         MSRP: "IROC-Z: around $13,490",
         forumLink: "https://nastyz28.com/camaro/camaro88.html",
+        credit: "Unknown"
     },
     {
         year: 1989,
@@ -306,6 +326,7 @@ const camaroData = [
         zeroToSixty: "IROC-Z: around 6.7s",
         MSRP: "IROC-Z: around $14,100",
         forumLink: "https://nastyz28.com/camaro/camaro89.html",
+        credit: "https://www.saratogaautoauction.org/vehicles/1638/1989-chevrolet-camaro-z28-iroc"
     },
     {
         year: 1990,
@@ -319,6 +340,7 @@ const camaroData = [
         zeroToSixty: "IROC-Z: around 6.5s",
         MSRP: "IROC-Z: around $14,500",
         forumLink: "https://nastyz28.com/camaro/camaro90.html",
+        credit: "https://www.motortrend.com/features/1612-this-third-gen-1990-camaro-is-an-absolute-street-beast/"
     },
     {
         year: 1991,
@@ -331,6 +353,7 @@ const camaroData = [
         zeroToSixty: "Z28: around 6.5s",
         MSRP: "Z28: around $15,400",
         forumLink: "https://nastyz28.com/camaro/camaro91.html",
+        credit: "https://www.motortrend.com/features/1406-1991-chevrolet-camaro-z28-cool-cruiser/"
     },
     {
         year: 1992,
@@ -343,6 +366,7 @@ const camaroData = [
         zeroToSixty: "Z28: around 6.5s",
         MSRP: "Z28: around $16,000",
         forumLink: "https://nastyz28.com/camaro/camaro92.html",
+        credit: "https://www.motortrend.com/features/1405-1992-chevrolet-camaro-z28-sacrifice-play/"
     },
     {
         year: 1993,
@@ -355,6 +379,7 @@ const camaroData = [
         zeroToSixty: "Z/28: 5.7s",
         MSRP: "Z/28: around $16,800",
         forumLink: "https://camaroforums.com/forum/93-02-general-41/",
+        credit: "https://www.motortrend.com/features/camp-0912-1993-chevy-camaro-z28/"
     },
     {
         year: 1994,
@@ -368,6 +393,7 @@ const camaroData = [
         zeroToSixty: "Z28: around 5.7s",
         MSRP: "Z28: around $17,000",
         forumLink: "https://camaroforums.com/forum/93-02-general-41/",
+        credit: "Unknown"
     },
     {
         year: 1995,
@@ -380,6 +406,7 @@ const camaroData = [
         zeroToSixty: "Z28: around 5.7s",
         MSRP: "Z28: around $17,900",
         forumLink: "https://camaroforums.com/forum/93-02-general-41/",
+        credit: "Unknown"
     },
     {
         year: 1996,
@@ -393,6 +420,7 @@ const camaroData = [
         zeroToSixty: "SS: around 5.5s",
         MSRP: "SS: around $24,000",
         forumLink: "https://camaroforums.com/forum/93-02-general-41/",
+        credit: "https://bringatrailer.com/listing/1996-chevrolet-camaro-z28/"
     },
     {
         year: 1997,
@@ -405,6 +433,7 @@ const camaroData = [
         zeroToSixty: "SS: around 5.5s",
         MSRP: "SS: around $24,000",
         forumLink: "https://camaroforums.com/forum/93-02-general-41/",
+        credit: "https://carsandbids.com/auctions/9WgPLav5/1997-chevrolet-camaro-z28-30th-anniversary-edition"
     },
     {
         year: 1998,
@@ -418,6 +447,7 @@ const camaroData = [
         zeroToSixty: "SS: around 5.2s",
         MSRP: "SS: around $24,500",
         forumLink: "https://camaroforums.com/forum/93-02-general-41/",
+        credit: "Unknown"
     },
     {
         year: 1999,
@@ -430,6 +460,7 @@ const camaroData = [
         zeroToSixty: "SS: around 5.2s",
         MSRP: "SS: around $25,000",
         forumLink: "https://camaroforums.com/forum/93-02-general-41/",
+        credit: "https://www.motortrend.com/features/ghtp-1108-chevrolet-1999-z28/"
     },
     {
         year: 2000,
@@ -443,6 +474,7 @@ const camaroData = [
         zeroToSixty: "SS: around 5.2s",
         MSRP: "SS: around $25,750",
         forumLink: "https://camaroforums.com/forum/93-02-general-41/",
+        credit: "https://www.netcarshow.com/chevrolet/2000-camaro/"
     },
     {
         year: 2001,
@@ -455,6 +487,7 @@ const camaroData = [
         zeroToSixty: "SS: around 5.2s",
         MSRP: "SS: around $26,000",
         forumLink: "https://camaroforums.com/forum/93-02-general-41/",
+        credit: "https://www.motortrend.com/features/1602-this-2001-camaro-is-one-of-the-baddest-fourth-gens-to-hit-streets/"
     },
     {
         year: 2002,
@@ -468,6 +501,7 @@ const camaroData = [
         zeroToSixty: "SS: around 5.2s",
         MSRP: "SS: around $26,400",
         forumLink: "https://camaroforums.com/forum/93-02-general-41/",
+        credit: "https://www.lsxmag.com/features/car-features/corner-carving-scott-cordells-2002-chevrolet-camaro/"
     },
     {
         year: 2010,
@@ -481,6 +515,7 @@ const camaroData = [
         zeroToSixty: "2SS: around 4.6s",
         MSRP: "2SS: around $33,175",
         forumLink: "https://www.camaro5.com/forums/",
+        credit: "Unknown"
     },
     {
         year: 2011,
@@ -494,6 +529,7 @@ const camaroData = [
         zeroToSixty: "2SS: around 4.6s",
         MSRP: "2SS: around $39,000",
         forumLink: "https://www.camaro5.com/forums/",
+        credit: "Unknown"
     },
     {
         year: 2012,
@@ -507,6 +543,7 @@ const camaroData = [
         zeroToSixty: "ZL1: around 4.1s",
         MSRP: "ZL1: around $55,000",
         forumLink: "https://www.camaro5.com/forums/",
+        credit: "Unknown"
     },
     {
         year: 2013,
@@ -519,6 +556,7 @@ const camaroData = [
         zeroToSixty: "ZL1: around 4.1s",
         MSRP: "ZL1: around $56,500",
         forumLink: "https://www.camaro5.com/forums/",
+        credit: "Unknown"
     },
     {
         year: 2014,
@@ -532,6 +570,7 @@ const camaroData = [
         zeroToSixty: "Z28: around 3.95s",
         MSRP: "Z28: around $75,000",
         forumLink: "https://www.camaro5.com/forums/",
+        credit: "Unknown"
     },
     {
         year: 2015,
@@ -543,6 +582,7 @@ const camaroData = [
         zeroToSixty: "Z28: around 3.95s",
         MSRP: "Z28: around $75,000",
         forumLink: "https://www.camaro5.com/forums/",
+        credit: "Unknown"
     },
     {
         year: 2016,
@@ -553,7 +593,8 @@ const camaroData = [
         horsepower: "2SS: 455HP",
         zeroToSixty: "2SS: around 4.3s",
         MSRP: "2SS: around $43,000",
-        forumLink: "",
+        forumLink: "https://www.camaro5.com/forums/",
+        credit: "Unknown"
     },
     {
         year: 2017,
@@ -565,6 +606,7 @@ const camaroData = [
         zeroToSixty: "ZL1: around 3.5s",
         MSRP: "ZL1: around $67,000",
         forumLink: "https://www.camaro6.com/forums/",
+        credit: "Unknown"
     },
     {
         year: 2018,
@@ -576,6 +618,7 @@ const camaroData = [
         zeroToSixty: "ZL1: around 3.5s",
         MSRP: "ZL1: around $69,900",
         forumLink: "https://www.camaro6.com/forums/",
+        credit: "Unknown"
     },
     {
         year: 2019,
@@ -587,6 +630,7 @@ const camaroData = [
         zeroToSixty: "ZL1: around 3.5s",
         MSRP: "ZL1: around $70,100",
         forumLink: "https://www.camaro6.com/forums/",
+        credit: "Unknown"
     },
     {
         year: 2020,
@@ -598,6 +642,7 @@ const camaroData = [
         zeroToSixty: "ZL1: around 3.5s",
         MSRP: "ZL1: around $70,600",
         forumLink: "https://www.camaro6.com/forums/",
+        credit: "https://www.motortrend.com/news/2020-chevrolet-camaro-lt1-ss-v-8-price-photos/"
     },
     {
         year: 2021,
@@ -609,6 +654,7 @@ const camaroData = [
         zeroToSixty: "ZL1: around 3.4s",
         MSRP: "ZL1: around $71,600",
         forumLink: "https://www.camaro6.com/forums/",
+        credit: "Unknown"
     },
     {
         year: 2022,
@@ -620,6 +666,7 @@ const camaroData = [
         zeroToSixty: "ZL1: around 3.4s",
         MSRP: "ZL1: around $71,800",
         forumLink: "https://www.camaro6.com/forums/",
+        credit: "Unknown"
     },
     {
         year: 2023,
@@ -631,6 +678,7 @@ const camaroData = [
         zeroToSixty: "ZL1: around 3.4s",
         MSRP: "ZL1: around $75,600",
         forumLink: "https://www.camaro6.com/forums/",
+        credit: "Unknown"
     },
     {
         year: 2024,
@@ -642,6 +690,7 @@ const camaroData = [
         zeroToSixty: "ZL1: around 3.4s",
         MSRP: "ZL1: around $81,900",
         forumLink: "https://www.camaro6.com/forums/",
+        credit: "Unknown"
     },
     {
         year: 2025,
@@ -655,6 +704,7 @@ const camaroData = [
         zeroToSixty: "???",
         MSRP: "???",
         forumLink: "???",
+        credit: "???"
     },
 
     {
@@ -666,6 +716,7 @@ const camaroData = [
         zeroToSixty: "???",
         MSRP: "???",
         forumLink: "???",
+        credit: "???"
     },
 
 
