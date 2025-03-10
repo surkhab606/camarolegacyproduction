@@ -5,14 +5,32 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
   background-image: radial-gradient(#5a5a5a, black);
   background-repeat:no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
 }
 
 
@@ -23,7 +41,6 @@ body {
   padding: 0 10px;
   gap: 1px;
   margin-top: 55px;
-  height: 100px;
 }
 
 .camaroboxparent a {
@@ -285,6 +302,71 @@ body {
   filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
   opacity: 0;
   transition: opacity 1.5s ease-in;
+}
+
+.camaro-footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 150px;
+  font-family: Futura, sans-serif;
+}
+
+.contact-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Futura, sans-serif;
+}
+
+.contact-form button {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  font-family: Futura, sans-serif;
+}
+
+.contact-form button:hover {
+  background-color: darkred;
+}
+
+.success-message {
+  color: green;
+  font-size: 16px;
+  margin-top: 10px;
+  opacity: 0;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 
