@@ -317,6 +317,14 @@ html, body {
   margin-top: 25px;
 }
 
+.camaro-footer a {
+  color: white;
+}
+
+.camaro-footer a:hover {
+  color: darkblue;
+}
+
 .contact-container {
   text-align: center;
   padding: 20px;
