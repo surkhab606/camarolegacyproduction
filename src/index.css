@@ -381,5 +381,28 @@ html, body {
   100% { opacity: 0; }
 }
 
+@media (max-width: 768px) {
+  .camaro-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    overflow-y: scroll;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85); /* Slightly darker for readability */
+  }
+
+  .camaro-desc, .camaro-trims, .camaro-hp, .camaro-zero, .camaro-msrp, .camaro-forum, .camaro-credit {
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+
+
+
 
 
