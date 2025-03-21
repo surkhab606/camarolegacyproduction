@@ -37,6 +37,8 @@ function camaroGen(year) {
 }
 
 function HomePage() {
+    {/*The dropdown should start at generation 1.*/}
+    const [dropGen, setDropGen] = useState(camaroGen(1967))
 
     /*Goes back to saved scroll position if it exists*/
     useEffect(() => {
@@ -48,24 +50,47 @@ function HomePage() {
 
     }, []);
 
-    function dropDownGen() {
-
-        {/*The dropdown should start at generation 1.*/}
-        const [dropGen, setDropGen] = useState(camaroGen(1967))
+    //Function for dropdown / mobile logic
+    function getWindow() {
+        const{innerWidth: width, innerHeight: height} = window;
+        return {
+            width,
+            height
+        };
     }
+
+    const [windowDimensions, setWindowDimensions] = useState(getWindow());
+
+    useEffect(() => {
+        function handleResize() {
+            setWindowDimensions(getWindow());
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    //This variable checks if our screen size is mobile or not.
+    const isMobile = windowDimensions.width < 768;
+
+    //This variable is complex so bear with me.
+    const [camaroFilteredData, setCamaroFilterData] = isMobile ? CamaroData.filter(camaro => camaroGen(camaro.year) === dropGen)
+        : CamaroData;
+
+
 
   return (
       <div className={"homepage"}>
           <div className={"content"}>
               <div className={"logoDiv"}>
                   <img src={logo} alt={"Camaro Legacy Logo"} className={"logo"}/>
-                  <select className={"dropdown"}>
+                  <select className={"dropdown"} onChange={(event) => (setDropGen(event.target.value))}>
                       <option value={"gen1"}>First Generation (1967 - 1969)</option>
                       <option value={"gen2"}>Second Generation (1970 - 1981)</option>
                       <option value={"gen3"}>Third Generation (1982 - 1992)</option>
                       <option value={"gen4"}>Fourth Generation (1993 - 2002)</option>
-                      <option value={"gen5"}>Fifth Generation ('93 - '02)</option>
-                      <option value={"gen6"}>Sixth Generation ('93 - '02)</option>
+                      <option value={"gen5"}>Fifth Generation (2010 - 2015)</option>
+                      <option value={"gen6"}>Sixth Generation (2016 - 2024)</option>
                   </select>
               </div>
           <a href={"https://www.surkhabmundi.com"}><img src={smlogo} alt={"Portfolio Link"} style ={{width: "50px", position: "absolute", top: "10px", left: "25px"}}/></a>
@@ -73,7 +98,7 @@ function HomePage() {
           <div className="camaroboxparent">
 
             {/* Dynamic div generation. */}
-            {CamaroData.filter(camaro => camaro.year !== 1000).map((camaro) => (
+            {camaroFilteredData.filter(camaro => camaro.year !== 1000).map((camaro) => (
               <Link onClick={() => sessionStorage.setItem("scrollPosition", window.scrollY)}
                     to={`/camaro/${camaro.year}`}><div className="camarobox" style={{ backgroundImage: `url(${camaro.divImage})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
                   {/*Div Hover Light Effect*/}
