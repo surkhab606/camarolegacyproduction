@@ -410,7 +410,7 @@ html, body {
   }
 }
 
-.dropdown-container {
+dropdown {
   display: none; /*Don't display on desktop */
 }
 /*-------------------------------------------------------------------------*/
@@ -419,7 +419,7 @@ html, body {
     width: 250px; /* smaller for mobile */
   }
 
-  .dropdown-container {
+  .dropdown {
     display: block; /* show dropdown */
   }
 }

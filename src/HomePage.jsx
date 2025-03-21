@@ -50,7 +50,8 @@ function HomePage() {
 
     function dropDownGen() {
 
-        const [dropGen, setDropGen] = camaroGen
+        {/*The dropdown should start at generation 1.*/}
+        const [dropGen, setDropGen] = useState(camaroGen(1967))
     }
 
   return (
@@ -58,7 +59,14 @@ function HomePage() {
           <div className={"content"}>
               <div className={"logoDiv"}>
                   <img src={logo} alt={"Camaro Legacy Logo"} className={"logo"}/>
-
+                  <select className={"dropdown"}>
+                      <option value={"gen1"}>First Generation (1967 - 1969)</option>
+                      <option value={"gen2"}>Second Generation (1970 - 1981)</option>
+                      <option value={"gen3"}>Third Generation (1982 - 1992)</option>
+                      <option value={"gen4"}>Fourth Generation (1993 - 2002)</option>
+                      <option value={"gen5"}>Fifth Generation ('93 - '02)</option>
+                      <option value={"gen6"}>Sixth Generation ('93 - '02)</option>
+                  </select>
               </div>
           <a href={"https://www.surkhabmundi.com"}><img src={smlogo} alt={"Portfolio Link"} style ={{width: "50px", position: "absolute", top: "10px", left: "25px"}}/></a>
 
