@@ -33,6 +33,15 @@ html, body {
   flex: 1;
 }
 
+.logoDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 450px;
+  height: auto;
+}
 
 .camaroboxparent {
   display: flex;
@@ -400,6 +409,18 @@ html, body {
     margin-bottom: 15px;
   }
 }
+/*-------------------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .logo {
+    width: 250px; /* smaller for mobile */
+  }
+
+  .dropdown-container {
+    display: block; /* show dropdown */
+  }
+}
+
+
 
 
 

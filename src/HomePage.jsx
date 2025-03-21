@@ -52,7 +52,9 @@ function HomePage() {
   return (
       <div className={"homepage"}>
           <div className={"content"}>
-          <img src={logo} alt={"Camaro Legacy Logo"}  style={{ width: "450px", height: "auto", display: "block", margin: "0 auto"}}/>
+              <div className={"logoDiv"}>
+                  <img src={logo} alt={"Camaro Legacy Logo"} className={"logo"}/>
+              </div>
           <a href={"https://www.surkhabmundi.com"}><img src={smlogo} alt={"Portfolio Link"} style ={{width: "50px", position: "absolute", top: "10px", left: "25px"}}/></a>
 
           <div className="camaroboxparent">
