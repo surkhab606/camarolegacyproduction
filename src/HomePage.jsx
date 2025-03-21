@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css'
 import logo from '../public/assets/camarolegacylogo.png';
 import smlogo from '../public/assets/smlogo.png';
@@ -48,12 +48,17 @@ function HomePage() {
 
     }, []);
 
+    function dropDownGen() {
+
+        const [dropGen, setDropGen] = camaroGen
+    }
 
   return (
       <div className={"homepage"}>
           <div className={"content"}>
               <div className={"logoDiv"}>
                   <img src={logo} alt={"Camaro Legacy Logo"} className={"logo"}/>
+
               </div>
           <a href={"https://www.surkhabmundi.com"}><img src={smlogo} alt={"Portfolio Link"} style ={{width: "50px", position: "absolute", top: "10px", left: "25px"}}/></a>
 

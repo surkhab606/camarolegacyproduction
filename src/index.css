@@ -409,6 +409,10 @@ html, body {
     margin-bottom: 15px;
   }
 }
+
+.dropdown-container {
+  display: none; /*Don't display on desktop */
+}
 /*-------------------------------------------------------------------------*/
 @media (max-width: 768px) {
   .logo {
