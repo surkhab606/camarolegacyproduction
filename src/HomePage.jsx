@@ -74,7 +74,9 @@ function HomePage() {
     const isMobile = windowDimensions.width < 768;
 
     //This variable is complex so bear with me.
-    const [camaroFilteredData, setCamaroFilterData] = isMobile ? CamaroData.filter(camaro => camaroGen(camaro.year) === dropGen)
+    //We first check if we are on mobile. If we are then we need to generate the divs based on what dropdown year
+    //is selected. However, if we are not on mobile, then camaroFilteredData just equals CamaroData, changing nothing.
+    const camaroFilteredData = isMobile ? CamaroData.filter(camaro => camaroGen(camaro.year) === dropGen)
         : CamaroData;
 
 
