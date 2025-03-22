@@ -97,7 +97,7 @@ function HomePage() {
                       </select>
                   </div>
               </div>
-          <a href={"https://www.surkhabmundi.com"}><img src={smlogo} alt={"Portfolio Link"} style ={{width: "50px", position: "absolute", top: "10px", left: "25px"}}/></a>
+          <a href={"https://www.surkhabmundi.com"}><img src={smlogo} alt={"Portfolio Link"} className={"personalLogo"} /></a>
 
           <div className="camaroboxparent">
 
