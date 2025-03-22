@@ -410,7 +410,7 @@ html, body {
   }
 }
 
-dropdown {
+.dropdown {
   display: none; /*Don't display on desktop */
 }
 /*-------------------------------------------------------------------------*/
@@ -419,8 +419,35 @@ dropdown {
     width: 250px; /* smaller for mobile */
   }
 
+  .logoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .dropdown-container {
+    margin-top: 10px;
+  }
+
   .dropdown {
     display: block; /* show dropdown */
+
+    /* resets default dropdown CSS */
+    margin-top: 10px;
+    outline: none;
+    border: 2px solid white;
+    background-color: #111;
+    color: white;
+
+    font-family: 'Futura', sans-serif;
+    font-size: 1.1rem;
+    padding: 10px 14px;
+    border-radius: 8px;
+    width: 80vw;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+
   }
 }
 
