@@ -15,18 +15,33 @@ function CamaroPage() {
 
 
 
-        /*Fade in for div elements*/
+    /*Fade in for div elements*/
         useEffect(() => {
             setTimeout(() => {
                 setObjectOpacity(true);
             }, 5);
         }, []);
 
-        return (
+    //Function for dropdown / mobile logic
+    function getWindow() {
+        const{innerWidth: width, innerHeight: height} = window;
+        return {
+            width,
+            height
+        };
+    }
+
+    const [windowDimensions, setWindowDimensions] = useState(getWindow());
+    const isMobile = windowDimensions.width < 768;
+
+    //If we are on mobile, we need to use the div Image as the background image as the div image is already in the proper aspect ratio for mobile.
+    const chosenImage = isMobile ? camaro.divImage : camaro.image
+
+    return (
                 <div>
 
                     {/*Dynamic Camaro Image*/}
-                    <div className ="camaro-background" style={{ backgroundImage: `url(${camaro.image})`}}></div>
+                    <div className ="camaro-background" style={{ backgroundImage: `url(${chosenImage})`}}></div>
 
                     {/*Page Info Overlay*/}
                     <div className ="camaro-overlay" style={{opacity: objOpacity ? 1: 0}}>
