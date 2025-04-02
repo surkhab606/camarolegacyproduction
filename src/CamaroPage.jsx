@@ -32,6 +32,17 @@ function CamaroPage() {
     }
 
     const [windowDimensions, setWindowDimensions] = useState(getWindow());
+
+    useEffect(() => {
+        function handleResize() {
+            setWindowDimensions(getWindow());
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+
     const isMobile = windowDimensions.width < 768;
 
     //If we are on mobile, we need to use the div Image as the background image as the div image is already in the proper aspect ratio for mobile.
