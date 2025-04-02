@@ -448,12 +448,13 @@ html, body {
 
   .scroll-reminder {
     position: absolute;
-    top: 80vh;
+    top: 10vh;
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.2rem;
     color: white;
     animation: fadeInOut 3s ease-in-out;
+    font-family: 'Futura', sans-serif;
   }
 
 
