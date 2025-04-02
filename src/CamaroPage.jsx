@@ -12,11 +12,12 @@ function CamaroPage() {
         const currentIndex = CamaroData.findIndex((camaro => camaro.year === intYear));
         const prevIndex = currentIndex > 0 ? CamaroData[currentIndex - 1].year: null;
         const nextIndex = currentIndex < CamaroData.length - 1 ? CamaroData[currentIndex + 1].year: null;
+        const [scrollPopUp, setScrollPopUp] = useState(false)
 
 
 
-    /*Fade in for div elements*/
-        useEffect(() => {
+    //Fade in for div elements
+    useEffect(() => {
             setTimeout(() => {
                 setObjectOpacity(true);
             }, 5);
@@ -48,8 +49,42 @@ function CamaroPage() {
     //If we are on mobile, we need to use the div Image as the background image as the div image is already in the proper aspect ratio for mobile.
     const chosenImage = isMobile ? camaro.divImage : camaro.image
 
+    //If we are on mobile, we want to show a scroll pop up reminder to remind users they have to scroll down
+    useEffect(() => {
+        if (!isMobile) return; //we only want this on mobile
+        const timer = setTimeout(() => {
+            setScrollPopUp(true);
+        }, 2000);
+
+        const handleUserInteraction = () => {
+            setScrollPopUp(false);
+            clearTimeout(timer); // cancel the popup if user interacts
+            // remove listeners now that we got the interaction
+            window.removeEventListener('scroll', handleUserInteraction);
+            window.removeEventListener('click', handleUserInteraction);
+            window.removeEventListener('touchstart', handleUserInteraction);
+        };
+
+        window.addEventListener('scroll', handleUserInteraction);
+        window.addEventListener('click', handleUserInteraction);
+        window.addEventListener('touchstart', handleUserInteraction);
+
+        return () => {
+            clearTimeout(timer);
+            window.removeEventListener('scroll', handleUserInteraction);
+            window.removeEventListener('click', handleUserInteraction);
+            window.removeEventListener('touchstart', handleUserInteraction);
+        };
+    }, []);
+
     return (
                 <div>
+
+                    {/*Only display scroll pop up if it is on mobile!*/}
+                    {scrollPopUp && isMobile && (
+                        <div className="scroll-reminder">↓ Scroll Down</div>
+                    )}
+
 
                     {/*Dynamic Camaro Image*/}
                     <div className ="camaro-background" style={{ backgroundImage: `url(${chosenImage})`}}></div>
