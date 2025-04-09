@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import leftarrow from '../public/assets/leftarrow.svg';
 import rightarrow from '../public/assets/rightarrow.svg';
+import home from '../public/assets/homeicon.svg'
 
 function CamaroPage() {
     const { year } = useParams();
@@ -121,6 +122,17 @@ function CamaroPage() {
             </div>
 
             {/* Navigation Arrows */}
+
+            {/*Back to  home page on 1967 year*/}
+            {intYear === 1967 && (
+                <Link to={`/`}>
+                    <svg className="homeicon" style={{opacity: objOpacity ? 1 : 0 }} xmlns="http://www.w3.org/2000/svg" height="75" width="75" viewBox="0 -960 960 960">
+                        <path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/>
+                    </svg>
+                </Link>
+            )}
+
+
             {prevIndex != null && (
                 <Link to={`/camaro/${prevIndex}`}>
                     <svg className="leftarrow" style={{ opacity: objOpacity ? 1 : 0 }} xmlns="http://www.w3.org/2000/svg" height="75" width="75" viewBox="0 -960 960 960">

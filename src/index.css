@@ -302,6 +302,18 @@ html, body {
   transition: opacity 1.5s ease-in;
 }
 
+.homeicon {
+  position: absolute;
+  bottom: 85vh;
+  width: 40px;
+  fill: white;
+  left: 15px;
+  box-sizing: border-box;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+}
+
 .rightarrow {
   position: absolute;
   bottom: 85vh;
@@ -321,6 +333,10 @@ html, body {
   padding: 10px;
   margin-top: 150px;
   font-family: Futura, sans-serif;
+}
+
+.creditfooter h3 {
+  padding-top: 15px;
 }
 
 .camaro-footer p {
