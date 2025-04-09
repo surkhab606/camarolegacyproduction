@@ -574,6 +574,591 @@ html, body {
     bottom: 27vh;
   }
 
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee&family=Michroma&family=Orbitron:wght@400..900&family=Russo+One&family=Syncopate:wght@400;700&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(#5a5a5a, black);
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .homepage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .logoDiv {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 450px;
+    height: auto;
+  }
+
+  .camaroboxparent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+    gap: 1px;
+    margin-top: 55px;
+  }
+
+  .camaroboxparent a {
+    text-decoration: none;
+  }
+
+
+  .camarobox {
+
+    background-color: black;
+    height: 400px;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 400px;
+    max-height: 400px;
+    color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+
+  }
+
+  .camaroboxtext-gen1 {
+    font-family: Bungee, sans-serif;
+    font-size: 100px;
+    line-height: 100px;
+    text-align: left;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  }
+
+  .camaroboxtext-gen2 {
+    font-family: Russo One, sans-serif;
+    font-size: 100px;
+    line-height: 100px;
+    text-align: left;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  }
+
+  .camaroboxtext-gen3 {
+    font-family: Syncopate, sans-serif;
+    font-size: 100px;
+    line-height: 100px;
+    text-align: left;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  }
+
+  .camaroboxtext-gen4 {
+    font-family: Orbitron, sans-serif;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: left;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  }
+
+  .camaroboxtext-gen5 {
+    font-family: Anton, sans-serif;
+    font-size: 100px;
+    line-height: 100px;
+    text-align: left;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  }
+
+  .camaroboxtext-gen6 {
+    font-family: Michroma, sans-serif;
+    font-size: 70px;
+    line-height: 70px;
+    text-align: left;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+
+  }
+
+  .camaro-background {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .camaro-overlay {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 35vh; /* locked height */
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    overflow: hidden; /* no scroll here */
+    z-index: 10;
+  }
+
+
+  .right-overlay {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 100%; /* fills up the height of the overlay */
+    overflow-y: auto;
+    padding-right: 10px; /* optional: keeps scrollbar from hugging the edge */
+  }
+
+
+  .camaro-year {
+    position: absolute;
+    bottom: 31vh; /* always above the tallest possible overlay */
+    font-size: 18vh;
+    text-shadow: 10px 2px 7px rgba(0, 0, 0, 0.7);
+    font-family: Futura, sans-serif;
+    padding-left: 5px;
+    color: white;
+    -webkit-text-stroke: 3px black;
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+    z-index: 11; /* one above the overlay */
+  }
+
+
+  .camaro-desc {
+    color: white;
+    max-width: 45%;
+    bottom: 9vh;
+    font-size: 3vh;
+    padding-top: 15px;
+    display: inline;
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+    font-family: Futura, sans-serif;
+  }
+
+  .camaro-trims {
+    color: white;
+    font-size: 3vh;
+    display: inline;
+    top: 15px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+    font-family: Futura, sans-serif;
+  }
+
+  .camaro-hp {
+    color: white;
+    font-size: 3vh;
+    display: inline;
+    top: 50px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+    font-family: Futura, sans-serif;
+  }
+
+  .camaro-zero {
+    color: white;
+    font-size: 3vh;
+    display: inline;
+    top: 85px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+    font-family: Futura, sans-serif;
+  }
+
+  .camaro-msrp {
+    color: white;
+    font-size: 3vh;
+    display: inline;
+    top: 120px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+    font-family: Futura, sans-serif;
+  }
+
+  .camaro-forum {
+    color: white;
+    font-size: 3vh;
+    display: inline;
+    top: 155px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+    font-family: Futura, sans-serif;
+  }
+
+
+  .camaro-forum a {
+    font-size: 2.4vh;
+    color: white;
+    font-family: Futura, sans-serif;
+    display: inline;
+  }
+
+  .camaro-forum a:hover {
+    color: darkblue;
+  }
+
+  .camaro-credit {
+    color: white;
+    font-size: 3vh;
+    font-family: Futura, sans-serif;
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+    display: block;
+  }
+
+
+  .camaro-credit a {
+    font-size: 2.4vh;
+    color: white;
+    font-family: Futura, sans-serif;
+    display: inline;
+  }
+
+  .camaro-credit a:hover {
+    color: darkblue;
+  }
+
+  .hover-light {
+    position: absolute;
+    left: -100%;
+    height: 445px;
+    bottom: -10px;
+    width: 20px;
+    background-image: linear-gradient(to right, transparent, white, transparent );
+    box-shadow: 0 0 20px white;
+    transform: rotate(20deg);
+  }
+
+  .camarobox:hover {
+    transform: translateY(-2vh);
+  }
+
+  .camarobox:hover .hover-light {
+    left: 125%;
+    transition: 0.7s ease-in-out;
+  }
+
+  .leftarrow {
+    position: absolute;
+    bottom: 85vh;
+    width: 75px;
+    fill: white;
+    left: 5px;
+    box-sizing: border-box;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+  }
+
+  .homeicon {
+    position: absolute;
+    bottom: 85vh;
+    width: 40px;
+    fill: white;
+    left: 15px;
+    box-sizing: border-box;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+  }
+
+  .rightarrow {
+    position: absolute;
+    bottom: 85vh;
+    width: 75px;
+    fill: white;
+    right: 5px;
+    box-sizing: border-box;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+  }
+
+  .camaro-footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 150px;
+    font-family: Futura, sans-serif;
+  }
+
+  .creditfooter h3 {
+    padding-top: 15px;
+  }
+
+  .camaro-footer p {
+    margin-top: 25px;
+  }
+
+  .camaro-footer a {
+    color: white;
+  }
+
+  .camaro-footer a:hover {
+    color: darkblue;
+  }
+
+  .contact-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+  }
+
+  .camaro-mobile-scroll-wrapper {
+    display: contents;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Futura, sans-serif;
+  }
+
+  .contact-form button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    font-family: Futura, sans-serif;
+  }
+
+  .contact-form button:hover {
+    background-color: darkred;
+  }
+
+  .success-message {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeInOut 3s ease-in-out;
+  }
+
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+
+  .dropdown {
+    display: none; /*Don't display on desktop */
+  }
+
+  .personalLogo {
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+  }
+
+  /*-------------------------------------------------------------------------*/
+  @media (max-width: 768px) {
+    .logo {
+      width: 250px; /* smaller for mobile */
+    }
+
+    .html, body {
+      height: auto;
+      min-height: 100vh;
+      overflow-x: hidden;
+
+    }
+
+    .camaro-mobile-wrapper {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .personalLogo {
+      width: 35px;
+      position: absolute;
+      top: 10px;
+      left: 25px;
+    }
+
+    .logoDiv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .dropdown-container {
+      margin-top: 10px;
+    }
+
+    .dropdown {
+      display: block; /* show dropdown */
+
+      /* resets default dropdown CSS */
+      margin-top: 10px;
+      outline: none;
+      border: 2px solid white;
+      background-color: #111;
+      color: white;
+
+      font-family: 'Futura', sans-serif;
+      font-size: 1.1rem;
+      padding: 10px 14px;
+      border-radius: 8px;
+      width: 80vw;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease-in-out;
+
+    }
+
+    .scroll-reminder {
+      position: absolute;
+      top: 10vh;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.2rem;
+      color: white;
+      animation: fadeInOut 3s ease-in-out;
+      font-family: 'Futura', sans-serif;
+    }
+
+    .camaro-background {
+      height: 100vh;
+      background-attachment: scroll;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .camaro-overlay {
+      position: absolute !important;
+      bottom: 0;
+      width: 100%;
+      max-height: 30vh;
+      overflow-y: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      transition: opacity 1.5s ease-in;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      opacity: 0;
+      padding: 10px 20px !important;
+      box-sizing: border-box;
+
+      -webkit-overflow-scrolling: touch; /* <-- this is the key */
+      touch-action: pan-y; /* optional: reinforces vertical scrolling */
+    }
+
+
+    .camaro-overlay::-webkit-scrollbar {
+      display: none; /* Chrome, Safari */
+    }
+
+
+    .scroll-trigger {
+      width: 100%;
+      height: 1px;
+      margin-top: 20px;
+    }
+
+    .desc-scroll-trigger {
+      width: 100%;
+      height: 1px;
+      margin-top: 150px; /* tweak this spacing to control when desc shows */
+    }
+
+    .camaro-desc {
+      max-width: 100% !important;
+      padding: 10px 20px !important;
+      text-align: center !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+      display: block !important;
+      position: static !important;
+    }
+
+
+    .camaro-overlay p {
+      position: static !important;
+      padding: 10px 20px;
+      font-size: 18px;
+      text-align: center;
+      width: 100%;
+      line-height: 1.4;
+      word-wrap: break-word;
+      box-sizing: border-box;
+    }
+
+    .camaro-year {
+      position: absolute;
+      font-size: 15vh;
+      bottom: 27vh;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

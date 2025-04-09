@@ -103,26 +103,68 @@ function CamaroPage() {
                 <p className="camaro-year" style={{ opacity: objOpacity ? 1 : 0 }}>{camaro.year}</p>
 
                 <div className="camaro-overlay" style={{ opacity: objOpacity ? 1 : 0 }}>
-                    <div className="left-overlay">
-                        <p className="camaro-desc" style={{ opacity: objOpacity && descVisible ? 1 : 0 }}>{camaro.description}</p>
-                    </div>
-                    <div className="right-overlay">
-                        <p className="camaro-trims" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>Trims: {camaro.trims}</p>
-                        <p className="camaro-hp" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>Horsepower - {camaro.horsepower}</p>
-                        <p className="camaro-zero" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>0-60 - {camaro.zeroToSixty}</p>
-                        <p className="camaro-msrp" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>MSRP - {camaro.MSRP}</p>
-                        <p className="camaro-forum" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>
-                            More Info - <a href={camaro.forumLink} target="_blank" rel="noopener noreferrer">{camaro.forumLink}</a>
-                        </p>
-                        {/*Made a formal credit page. No need for credit on div for now */}
-                        <p className="camaro-credit" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>
-                            Credit: {/^https?:\/\//.test(camaro.credit) ? (
-                            <a href={camaro.credit} target="_blank" rel="noopener noreferrer">{camaro.credit}</a>
-                        ) : (
-                            camaro.credit
-                        )}
-                        </p>
-                    </div>
+                    {isMobile ? (
+                        <div className="right-overlay">
+                            <p className="camaro-desc" style={{ opacity: objOpacity && descVisible ? 1 : 0 }}>
+                                {camaro.description}
+                            </p>
+                            <p className="camaro-trims" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>
+                                Trims: {camaro.trims}
+                            </p>
+                            <p className="camaro-hp" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>
+                                Horsepower - {camaro.horsepower}
+                            </p>
+                            <p className="camaro-zero" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>
+                                0-60 - {camaro.zeroToSixty}
+                            </p>
+                            <p className="camaro-msrp" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>
+                                MSRP - {camaro.MSRP}
+                            </p>
+                            <p className="camaro-forum" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>
+                                More Info - <a href={camaro.forumLink} target="_blank" rel="noopener noreferrer">{camaro.forumLink}</a>
+                            </p>
+                            <p className="camaro-credit" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>
+                                Credit: {/^https?:\/\//.test(camaro.credit) ? (
+                                <a href={camaro.credit} target="_blank" rel="noopener noreferrer">{camaro.credit}</a>
+                            ) : (
+                                camaro.credit
+                            )}
+                            </p>
+                        </div>
+                    ) : (
+                        <>
+                            <div className="left-overlay">
+                                <p className="camaro-desc" style={{ opacity: objOpacity && descVisible ? 1 : 0 }}>
+                                    {camaro.description}
+                                </p>
+                            </div>
+                            <div className="right-overlay">
+                                <p className="camaro-trims" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>
+                                    Trims: {camaro.trims}
+                                </p>
+                                <p className="camaro-hp" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>
+                                    Horsepower - {camaro.horsepower}
+                                </p>
+                                <p className="camaro-zero" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>
+                                    0-60 - {camaro.zeroToSixty}
+                                </p>
+                                <p className="camaro-msrp" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>
+                                    MSRP - {camaro.MSRP}
+                                </p>
+                                <p className="camaro-forum" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>
+                                    More Info - <a href={camaro.forumLink} target="_blank" rel="noopener noreferrer">{camaro.forumLink}</a>
+                                </p>
+                                <p className="camaro-credit" style={{ opacity: objOpacity && factsVisible ? 1 : 0 }}>
+                                    Credit: {/^https?:\/\//.test(camaro.credit) ? (
+                                    <a href={camaro.credit} target="_blank" rel="noopener noreferrer">{camaro.credit}</a>
+                                ) : (
+                                    camaro.credit
+                                )}
+                                </p>
+                            </div>
+                        </>
+                    )}
+
                 </div>
             </div>
 
