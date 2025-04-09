@@ -138,29 +138,54 @@ html, body {
 
 .camaro-overlay {
   position: fixed;
-  width: 100%;
-  height: 30vh;
   bottom: 0;
+  width: 100%;
+  height: 35vh; /* locked height */
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
   transition: opacity 1.5s ease-in;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: flex-start;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  overflow: hidden; /* no scroll here */
+  z-index: 10;
 }
 
+
+
+.left-overlay {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.right-overlay {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 100%; /* fills up the height of the overlay */
+  overflow-y: auto;
+  padding-right: 10px; /* optional: keeps scrollbar from hugging the edge */
+}
+
+
 .camaro-year {
-  color: white;
-  bottom: 28vh;
   position: absolute;
+  bottom: 31vh; /* always above the tallest possible overlay */
   font-size: 18vh;
   text-shadow: 10px 2px 7px rgba(0, 0, 0, 0.7);
   font-family: Futura, sans-serif;
   padding-left: 5px;
+  color: white;
   -webkit-text-stroke: 3px black;
   opacity: 0;
   transition: opacity 1.5s ease-in;
+  z-index: 11; /* one above the overlay */
 }
+
 
 .camaro-desc {
   color: white;
@@ -168,7 +193,6 @@ html, body {
   bottom: 9vh;
   font-size: 3vh;
   padding-top: 15px;
-  padding-left: 20px;
   display: inline;
   opacity: 0;
   transition: opacity 1.5s ease-in;
@@ -178,8 +202,6 @@ html, body {
 .camaro-trims {
   color: white;
   font-size: 3vh;
-  padding-left: 700px;
-  position: absolute;
   display: inline;
   top: 15px;
   opacity: 0;
@@ -190,8 +212,6 @@ html, body {
 .camaro-hp {
   color: white;
   font-size: 3vh;
-  padding-left: 700px;
-  position: absolute;
   display: inline;
   top: 50px;
   opacity: 0;
@@ -202,8 +222,6 @@ html, body {
 .camaro-zero {
   color: white;
   font-size: 3vh;
-  padding-left: 700px;
-  position: absolute;
   display: inline;
   top: 85px;
   opacity: 0;
@@ -214,8 +232,6 @@ html, body {
 .camaro-msrp {
   color: white;
   font-size: 3vh;
-  padding-left: 700px;
-  position: absolute;
   display: inline;
   top: 120px;
   opacity: 0;
@@ -226,8 +242,6 @@ html, body {
 .camaro-forum {
   color: white;
   font-size: 3vh;
-  padding-left: 700px;
-  position: absolute;
   display: inline;
   top: 155px;
   opacity: 0;
@@ -250,14 +264,12 @@ html, body {
 .camaro-credit {
   color: white;
   font-size: 3vh;
-  padding-left: 700px;
-  position: absolute;
-  display: inline;
-  top: 190px;
+  font-family: Futura, sans-serif;
   opacity: 0;
   transition: opacity 1.5s ease-in;
-  font-family: Futura, sans-serif;
+  display: block;
 }
+
 
 .camaro-credit a {
   font-size: 2.4vh;
@@ -498,19 +510,21 @@ html, body {
   }
 
   .camaro-overlay {
-    position: absolute;
+    position: absolute !important;
     bottom: 0;
     width: 100%;
-    max-height: 45%;
+    height: 30vh;
+    max-height: none;
     overflow-y: auto;
     background-color: rgba(0, 0, 0, 0.6);
     transition: opacity 1.5s ease-in;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
     opacity: 0;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+    padding: 10px 20px !important;
+    box-sizing: border-box;
+
   }
 
   .camaro-overlay::-webkit-scrollbar {
@@ -530,6 +544,17 @@ html, body {
     margin-top: 150px; /* tweak this spacing to control when desc shows */
   }
 
+  .camaro-desc {
+    max-width: 100% !important;
+    padding: 10px 20px !important;
+    text-align: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    display: block !important;
+    position: static !important;
+  }
+
+
   .camaro-overlay p {
     position: static !important;
     padding: 10px 20px;
@@ -540,9 +565,11 @@ html, body {
     word-wrap: break-word;
     box-sizing: border-box;
   }
+
   .camaro-year {
     position: absolute;
     font-size: 15vh;
+    bottom: 27vh;
   }
 
 
