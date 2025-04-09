@@ -133,6 +133,7 @@ html, body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .camaro-overlay {
@@ -408,6 +409,19 @@ html, body {
     width: 250px; /* smaller for mobile */
   }
 
+  .html, body {
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+  }
+
+  .camaro-mobile-wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+
   .personalLogo {
     width: 35px;
     position: absolute;
@@ -457,20 +471,67 @@ html, body {
     font-family: 'Futura', sans-serif;
   }
 
+  .camaro-background {
+    height: 100vh;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+  }
 
   .camaro-overlay {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    height: 35vh;
+    max-height: 45%;
+    overflow-y: auto;
     background-color: rgba(0, 0, 0, 0.6);
-    opacity: 0;
     transition: opacity 1.5s ease-in;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    overflow: hidden;
+    align-items: center;
+    opacity: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
+
+  .camaro-overlay::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+
+
+  .scroll-trigger {
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+  }
+
+  .desc-scroll-trigger {
+    width: 100%;
+    height: 1px;
+    margin-top: 150px; /* tweak this spacing to control when desc shows */
+  }
+
+  .camaro-overlay p {
+    position: static !important;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    line-height: 1.4;
+    word-wrap: break-word;
+    box-sizing: border-box;
+  }
+  .camaro-year {
+    position: absolute;
+    font-size: 15vh;
+  }
+
+
+
+
 
 }
 
