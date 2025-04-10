@@ -349,7 +349,6 @@ html, body {
     font-family: Futura, sans-serif;
     text-align: center;
     margin: 5px 5px 5px 5px;
-
   }
 
 
@@ -369,13 +368,16 @@ html, body {
 
   .camaro-desc,
   .camaro-overlay p {
-    max-width: 100% !important;
+    max-width: 85vw !important;
     padding: 10px 20px !important;
     text-align: center !important;
     width: 100% !important;
     box-sizing: border-box !important;
     display: block !important;
     position: static !important;
+    margin: 0 auto;
+    line-height: 1.5;
+    word-wrap: break-word;
   }
 
   .camaro-year {
