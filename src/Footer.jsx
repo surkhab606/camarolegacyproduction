@@ -11,7 +11,7 @@ function Footer() {
                 </h3>
             </a>
 
-            <a target="_blank" className="creditfooter" href={"https://docs.google.com/document/d/e/2PACX-1vSN7jv6h7ofg5tsJQEaAX7T6YnsTHgH2KqoWQC4L4-qdDSMZwrbGCo_xh9mMSQvmVqX4VtASQiiHaOV/pub"}>
+            <a target="_blank" href={"https://docs.google.com/document/d/e/2PACX-1vSN7jv6h7ofg5tsJQEaAX7T6YnsTHgH2KqoWQC4L4-qdDSMZwrbGCo_xh9mMSQvmVqX4VtASQiiHaOV/pub"}>
                 <h3>
                     View the full credits here!
                 </h3>

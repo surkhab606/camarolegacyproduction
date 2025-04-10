@@ -15,6 +15,7 @@ function CamaroPage() {
     const [factsVisible, setFactsVisible] = useState(false);
     const [descVisible, setDescVisible] = useState(false);
 
+
     const currentIndex = CamaroData.findIndex(camaro => camaro.year === intYear);
     const prevIndex = currentIndex > 0 ? CamaroData[currentIndex - 1].year : null;
     const nextIndex = currentIndex < CamaroData.length - 1 ? CamaroData[currentIndex + 1].year : null;
@@ -90,7 +91,9 @@ function CamaroPage() {
         }
     }, [isMobile]);
 
+
     return (
+
         <div>
             {/* Mobile-only scroll reminder */}
             {/* this doesn't currently work, might rework in the future*/}
@@ -99,7 +102,13 @@ function CamaroPage() {
             )}
 
             <div className="camaro-mobile-wrapper">
-                <div className="camaro-background" style={{ backgroundImage: `url(${chosenImage})` }}></div>
+                <div
+                        className="camaro-background"
+                        style={{
+                            opacity: objOpacity ? 1 : 0,
+                            backgroundImage:`url(${chosenImage})`,
+                        }}>
+                    </div>
                 <p className="camaro-year" style={{ opacity: objOpacity ? 1 : 0 }}>{camaro.year}</p>
 
                 <div className="camaro-overlay" style={{ opacity: objOpacity ? 1 : 0 }}>
