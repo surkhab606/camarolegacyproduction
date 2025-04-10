@@ -8,8 +8,6 @@
   box-sizing: border-box;
 }
 
-
-
 html, body {
   margin: 0;
   padding: 0;
@@ -336,6 +334,20 @@ html, body {
   .camaro-background {
     background-attachment: scroll;
   }
+
+  .camaro-overlay p,
+  .camaro-desc, .camaro-trims, .camaro-hp, .camaro-zero, .camaro-msrp, .camaro-forum, .camaro-credit {
+    color: white;
+    font-size: 2.5vh;
+    display: inline;
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+    font-family: Futura, sans-serif;
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+
+  }
+
 
   .camaro-overlay {
     position: absolute !important;
