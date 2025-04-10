@@ -332,7 +332,11 @@ html, body {
   .logo { width: 250px; }
 
   .camaro-background {
-    background-attachment: scroll;
+    background-attachment: fixed;
+  }
+
+  .leftarrow, .rightarrow, .homeicon {
+    width: 50px; /* optional: resize for smaller screens */
   }
 
   .camaro-overlay p,
