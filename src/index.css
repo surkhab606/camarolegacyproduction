@@ -332,7 +332,7 @@ html, body {
   .logo { width: 250px; }
 
   .leftarrow, .rightarrow, .homeicon {
-    bottom: 10vh;
+    bottom: 5vh;
   }
 
   .camaro-background {
