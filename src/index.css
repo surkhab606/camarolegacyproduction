@@ -331,6 +331,10 @@ html, body {
 @media (max-width: 768px) {
   .logo { width: 250px; }
 
+  .leftarrow, .rightarrow, .homeicon {
+    bottom: 10vh;
+  }
+
   .camaro-background {
     background-attachment: fixed;
   }
