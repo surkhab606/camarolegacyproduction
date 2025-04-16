@@ -20,6 +20,8 @@ function CamaroPage() {
     const prevIndex = currentIndex > 0 ? CamaroData[currentIndex - 1].year : null;
     const nextIndex = currentIndex < CamaroData.length - 1 ? CamaroData[currentIndex + 1].year : null;
 
+    const [bgLoaded, setBgLoaded] = useState(false);
+
     function getWindow() {
         const { innerWidth: width, innerHeight: height } = window;
         return { width, height };
@@ -102,10 +104,17 @@ function CamaroPage() {
             )}
 
             <div className="camaro-mobile-wrapper">
+                <img
+                    src={chosenImage}
+                    alt="Preload Background"
+                    style={{ display: 'none' }}
+                    onLoad={() => setBgLoaded(true)}
+                />
+                {!bgLoaded && <div className="shimmer-loader" />}
                 <div
                         className="camaro-background"
                         style={{
-                            opacity: objOpacity ? 1 : 0,
+                            opacity: bgLoaded ? 1 : 0,
                             backgroundImage:`url(${chosenImage})`,
                         }}>
                     </div>

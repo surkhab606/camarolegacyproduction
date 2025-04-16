@@ -150,6 +150,7 @@ html, body {
   background-attachment: fixed;
   opacity: 0;
   transition: opacity 1s ease-in;
+  z-index:1;
 }
 
 .camaro-overlay {
@@ -341,6 +342,7 @@ html, body {
 
   .camaro-background {
     background-attachment: fixed;
+    pointer-events: none;
   }
 
   .camaro-overlay p,
