@@ -329,18 +329,18 @@ html, body {
 
 /* === MOBILE STYLES === */
 @media (max-width: 768px) {
-  .logo { width: 250px; }
+  .logo {
+    width: 250px;
+  }
 
   .leftarrow, .rightarrow, .homeicon {
-    bottom: 5vh;
+    bottom: 650px;
+    z-index: 20;
+    width: 50px;
   }
 
   .camaro-background {
     background-attachment: fixed;
-  }
-
-  .leftarrow, .rightarrow, .homeicon {
-    width: 50px; /* optional: resize for smaller screens */
   }
 
   .camaro-overlay p,
