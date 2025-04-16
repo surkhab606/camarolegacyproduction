@@ -22,6 +22,11 @@ function CamaroPage() {
 
     const [bgLoaded, setBgLoaded] = useState(false);
 
+    useEffect(() => {
+        setBgLoaded(false);
+    }, [chosenImage]);
+
+
     function getWindow() {
         const { innerWidth: width, innerHeight: height } = window;
         return { width, height };
