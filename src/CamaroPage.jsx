@@ -22,9 +22,6 @@ function CamaroPage() {
 
     const [bgLoaded, setBgLoaded] = useState(false);
 
-    useEffect(() => {
-        setBgLoaded(false);
-    }, [chosenImage]);
 
 
     function getWindow() {
@@ -45,6 +42,10 @@ function CamaroPage() {
 
     const isMobile = windowDimensions.width < 768;
     const chosenImage = isMobile ? camaro.divImage : camaro.image;
+
+    useEffect(() => {
+        setBgLoaded(false);
+    }, [chosenImage]);
 
     // Fade in overlay
     useEffect(() => {
