@@ -330,25 +330,65 @@ html, body {
 
 /* === MOBILE STYLES === */
 @media (max-width: 768px) {
+
   .logo {
     width: 250px;
   }
 
   .leftarrow, .rightarrow, .homeicon {
     bottom: 650px;
-    z-index: 20;
+    z-index: 100;
     width: 50px;
+    position: fixed !important;
   }
 
   .camaro-background {
-    background-attachment: fixed;
+    width: 100vw;
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    z-index: 0;
+    top: 0;
+    left: 0;
     pointer-events: none;
+  }
+
+  .camaro-mobile-wrapper {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+
+  .camaro-content-section {
+    background-color: black;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+  }
+
+  .camaro-background::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px; /* adjust for strength */
+    width: 100%;
+    background: linear-gradient(to bottom, transparent, black);
+    z-index: 2;
   }
 
   .camaro-overlay p,
   .camaro-desc, .camaro-trims, .camaro-hp, .camaro-zero, .camaro-msrp, .camaro-forum, .camaro-credit {
     color: white;
-    font-size: 2.5vh;
+    font-size: 3vh;
     display: inline;
     opacity: 0;
     transition: opacity 1.5s ease-in;
@@ -359,13 +399,15 @@ html, body {
 
 
   .camaro-overlay {
-    position: absolute !important;
-    max-height: 30vh;
-    flex-direction: column !important;
-    align-items: center !important;
-    padding: 10px 20px !important;
-    -webkit-overflow-scrolling: touch;
-    touch-action: pan-y;
+    position: relative;
+    margin-top: 0;
+    height: auto;
+    padding: 15px 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
   }
 
   .camaro-overlay::-webkit-scrollbar {
@@ -387,8 +429,13 @@ html, body {
   }
 
   .camaro-year {
-    font-size: 15vh;
-    bottom: 27vh;
+    position: absolute;
+    bottom: 1vh; /* adjust until it sits just above overlay visually */
+    text-align: center;
+    font-size: 12vh;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
   }
 
   .dropdown {
@@ -409,11 +456,12 @@ html, body {
   }
 
   .scroll-reminder {
-    position: absolute;
+    position: fixed;
     top: 10vh;
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.2rem;
+    z-index: 50;
     color: white;
     animation: fadeInOut 3s ease-in-out;
     font-family: 'Futura', sans-serif;
