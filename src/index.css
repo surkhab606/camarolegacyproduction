@@ -147,7 +147,6 @@ html, body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   opacity: 0;
   transition: opacity 1s ease-in;
   z-index:1;
