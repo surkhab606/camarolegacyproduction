@@ -132,12 +132,12 @@ html, body {
 }
 
 /* === TEXT FONTS PER GENERATION === */
-.camaroboxtext-gen1 { font-family: Bungee, sans-serif; font-size: 72px; line-height: 1; color: white; text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);}
-.camaroboxtext-gen2 { font-family: Russo One, sans-serif; font-size: 72px; line-height: 1; color: white; text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);}
-.camaroboxtext-gen3 { font-family: Syncopate, sans-serif; font-size: 72px; line-height: 1; color: white; text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);}
-.camaroboxtext-gen4 { font-family: Orbitron, sans-serif; font-size: 72px; line-height: 1; color: white; text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);}
-.camaroboxtext-gen5 { font-family: Anton, sans-serif; font-size: 72px; line-height: 1; color: white; text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);}
-.camaroboxtext-gen6 { font-family: Michroma, sans-serif; font-size: 72px; line-height: 1; color: white; text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);}
+.camaroboxtext-gen1 { font-family: 'Bungee', sans-serif; font-size: 72px; line-height: 1; color: white; text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);}
+.camaroboxtext-gen2 { font-family: 'Russo One', sans-serif; font-size: 72px; line-height: 1; color: white; text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);}
+.camaroboxtext-gen3 { font-family: 'Syncopate', sans-serif; font-size: 72px; line-height: 1; color: white; text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);}
+.camaroboxtext-gen4 { font-family: 'Orbitron', sans-serif; font-size: 72px; line-height: 1; color: white; text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);}
+.camaroboxtext-gen5 { font-family: 'Anton', sans-serif; font-size: 72px; line-height: 1; color: white; text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);}
+.camaroboxtext-gen6 { font-family: 'Michroma', sans-serif; font-size: 72px; line-height: 1; color: white; text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);}
 
 /* === BACKGROUND + OVERLAY === */
 .camaro-background {
@@ -190,7 +190,7 @@ html, body {
   bottom: 31vh;
   font-size: 18vh;
   text-shadow: 10px 2px 7px rgba(0, 0, 0, 0.7);
-  font-family: Futura, sans-serif;
+  font-family: 'Futura', sans-serif;
   padding-left: 5px;
   color: white;
   -webkit-text-stroke: 3px black;
@@ -207,13 +207,13 @@ html, body {
   display: inline;
   opacity: 0;
   transition: opacity 1.5s ease-in;
-  font-family: Futura, sans-serif;
+  font-family: 'Futura', sans-serif;
 }
 
 .camaro-forum a, .camaro-credit a {
   font-size: 2.4vh;
   color: white;
-  font-family: Futura, sans-serif;
+  font-family: 'Futura', sans-serif;
   display: inline;
 }
 
@@ -246,7 +246,7 @@ html, body {
   color: white;
   padding: 10px;
   text-align: center;
-  font-family: Futura, sans-serif;
+  font-family: 'Futura', sans-serif;
   margin-top: 150px;
   margin-left: 5px;
   margin-right: 5px;
@@ -292,7 +292,7 @@ html, body {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-family: Futura, sans-serif;
+  font-family: 'Futura', sans-serif;
 }
 
 .contact-form button {
@@ -304,7 +304,7 @@ html, body {
   cursor: pointer;
   border-radius: 5px;
   transition: background 0.3s ease-in-out;
-  font-family: Futura, sans-serif;
+  font-family: 'Futura', sans-serif;
 }
 
 .contact-form button:hover {
@@ -390,7 +390,7 @@ html, body {
     display: inline;
     opacity: 0;
     transition: opacity 1.5s ease-in;
-    font-family: Futura, sans-serif;
+    font-family: 'Futura', sans-serif;
     text-align: center;
     margin: 5px 5px 5px 5px;
   }
